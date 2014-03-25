@@ -1,16 +1,581 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>#{get 'title' /}</title>
-        <meta charset="${_response_encoding}">
-        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
-        #{get 'moreStyles' /}
-        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
-        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
-        #{get 'moreScripts' /}
-    </head>
-    <body>
-        #{doLayout /}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="UFO Themes">
+
+    <title>#{get 'title' /}</title>
+    <meta charset="${_response_encoding}">
+    <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+    #{get 'moreStyles' /}
+    <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript"
+            charset="${_response_encoding}"></script>
+    #{get 'moreScripts' /}
+
+    <link rel="stylesheet" id="rs-settings-css" href="@{'/public/stylesheets/settings.css'}" type="text/css"
+          media="all">
+    <link rel="stylesheet" id="rs-captions-css" href="@{'/public/stylesheets/captions.css'}" type="text/css"
+          media="all">
+    <link rel="stylesheet" id="color-picker-css-css" href="@{'/public/stylesheets/colorpicker.css'}" type="text/css"
+          media="all">
+    <link rel="stylesheet" id="ufo-styler-css-css" href="@{'/public/stylesheets/ufo-styler.css'}" type="text/css"
+          media="all">
+    <link rel="stylesheet" id="style-css" href="@{'/public/stylesheets/style.css'}" type="text/css" media="all">
+    <link rel="stylesheet" id="google-fonts-css" href="@{'/public/stylesheets/googleapis.css'}" type="text/css"
+          media="all">
+    <link rel="stylesheet" id="shadowbox-css" href="@{'/public/stylesheets/shadowbox.css'}" type="text/css" media="all">
+    <link rel="stylesheet" id="flexslider-css" href="@{'/public/stylesheets/flexslider.css'}" type="text/css"
+          media="all">
+    <link rel="stylesheet" id="woocommerce-style-css" href="@{'/public/stylesheets/woocommerce.css'}" type="text/css"
+          media="all">
+    <link rel="stylesheet" id="ufo_shortcodes_css-css" href="@{'/public/stylesheets/shortcodes.css'}" type="text/css"
+          media="all">
+    <script type="text/javascript" src="@{'/public/javascripts/jquery.1.10.2.js'}"></script>
+    <script type="text/javascript" src="@{'/public/javascripts/jquery-migrate.min.js'}"></script>
+    <script type="text/javascript" src="@{'/public/javascripts/jquery.themepunch.revolution.min.js'}"></script>
+    <script type="text/javascript" src="@{'/public/javascripts/colorpicker.js'}"></script>
+    <script type="text/javascript" src="@{'/public/javascripts/eye.js'}"></script>
+    <script type="text/javascript" src="@{'/public/javascripts/utils.js'}"></script>
+    <script type="text/javascript" src="@{'/public/javascripts/jquery.sharrre-1.3.4.min.js'}"></script>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://demo.ufothemes.com/shopster/xmlrpc.php?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+          href="http://demo.ufothemes.com/shopster/wp-includes/wlwmanifest.xml">
+    <meta name="generator" content="WordPress 3.6.1">
+    <link rel="alternate" type="application/rss+xml" title="New products"
+          href="http://demo.ufothemes.com/shopster/shop/feed/">
+    <!-- BeginHeader -->
+    <style type="text/css">h1, h2, h3, h4, h5, h6, ul.nav li a, #cart-menu-inner a.menu-link, ul.nav li.megamenu ul li
+        a, .summary .price, .product .price { font-family: 'Open Sans'; }body, p, textarea, input, #tagline, ul.nav
+        li.megamenu ul li ul li a, .widget_price_filter .price_slider_amount .button, .product a h3, ul.nav li.megamenu
+        ul li ul.sub-menu li a { font-family: 'Arvo'; }
+    </style>
+    <!-- EndHeader -->
+    <style type="text/css">#logo-wrap .icon-bag {color:#2abbf2;font-size:32px;} #logo-wrap {margin-top:27px;}</style>
+
+    <!-- WooCommerce Version -->
+    <meta name="generator" content="WooCommerce 2.0.19">
+
+</head>
+
+<body class="archive post-type-archive post-type-archive-product browser-gecko single-author active-sidebar sidebar-left woocommerce woocommerce-page">
+<div id="ufo-styler" class="styler-hidden">
+    <div id="ufo-styler-toggle"></div>
+    <div id="color-picker-secondary"></div>
+</div>
+
+<div id="header-wrap-outer">
+<div id="top-container">
+    <div id="top-menu-wrap" class="container">
+        <div id="cart-menu-inner">
+            <ul class="cart_dropdown" data-success="Product added">
+                <li class="cart_dropdown_first"><a class="cart_dropdown_link menu-link" href="#"><span
+                        class="icon-cart"></span></a><span class="cart_subtotal"><span
+                        class="amount">$0</span></span><span class="hidecart-icon"><span
+                        class="icon-cart"></span></span>
+
+                    <div class="dropdown_widget dropdown_widget_cart"><span class="hidden">Cart</span>
+
+                        <div class="widget_shopping_cart_content">
+
+                            <ul class="cart_list product_list_widget ">
+
+
+                                <li class="empty">No products in the cart.</li>
+
+
+                            </ul>
+                            <!-- end product list -->
+
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <ul id="menu-top" class="top sf-js-enabled">
+            <li id="menu-item-661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-661"><a
+                    href="http://demo.ufothemes.com/shopster/my-account-2/">My account</a></li>
+            <li id="menu-item-673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-673"><a
+                    href="http://demo.ufothemes.com/shopster/order-tracking-2/">Tracking</a></li>
+            <li id="menu-item-696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-696"><a
+                    href="http://demo.ufothemes.com/shopster/checkout/">Checkout</a></li>
+            <li id="menu-item-667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-667"><a
+                    href="http://demo.ufothemes.com/shopster/cart-2/">Cart</a></li>
+        </ul>
+    </div>
+</div>
+<!-- #top-container  -->
+<div id="header-wrap">
+    <div id="header" class="container">
+        <div id="header-inner">
+            <div id="logo-wrap">
+                <!-- Print logo -->
+                <h1 class="logo">
+                    <a href="http://demo.ufothemes.com/shopster/" title="Shopster" rel="home">
+                        <span class="icon-bag"></span>Shopster </a>
+                </h1>
+                <!-- End Logo -->
+                <h2 id="tagline">Just another UFO themes demo site</h2>
+            </div>
+            <!-- #logo-wrap -->
+
+            <div id="main-menu-wrap">
+                <ul id="menu-main" class="nav sf sf-js-enabled">
+                    <li id="menu-item-493"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-493"><a
+                            class="sf-with-ul" href="http://demo.ufothemes.com/shopster/">Home<span
+                            class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;" class="sub-menu">
+                            <li id="menu-item-494"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-494">
+                                <a href="http://demo.ufothemes.com/shopster/">Homepage 1</a></li>
+                            <li id="menu-item-665"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-665"><a
+                                    href="http://demo.ufothemes.com/shopster/homesidebarwidgets/">Homepage 2</a></li>
+                            <li id="menu-item-664"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-664"><a
+                                    href="http://demo.ufothemes.com/shopster/homesidebar/">Homepage 3</a></li>
+                            <li id="menu-item-666"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-666"><a
+                                    href="http://demo.ufothemes.com/shopster/home-products/">Homepage 4</a></li>
+                            <li id="menu-item-585"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-585"><a>and
+                                many more…</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-584"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-584"><a
+                            class="sf-with-ul"
+                            href="http://demo.ufothemes.com/shopster/?post_type=product&amp;shop_sidebar=no">Shop<span
+                            class="sf-sub-indicator"> »</span></a>
+                        <ul style="visibility: hidden; display: none;" class="sub-menu">
+                            <li id="menu-item-691"
+                                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item menu-item-691">
+                                <a href="http://demo.ufothemes.com/shopster/shop/">Shop with sidebar</a></li>
+                            <li id="menu-item-580"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-580"><a
+                                    href="http://demo.ufothemes.com/shopster/?post_type=product&amp;shop_sidebar=no">Shop
+                                fullwidth</a></li>
+                            <li id="menu-item-581"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-581"><a
+                                    href="http://demo.ufothemes.com/shopster/?product=knitted-blazer">Single product +
+                                sidebar</a></li>
+                            <li id="menu-item-582"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-582"><a
+                                    href="http://demo.ufothemes.com/shopster/?product=knitted-blazer&amp;product_sidebar=no">Single
+                                product fullwidth</a></li>
+                            <li id="menu-item-687"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-687"><a
+                                    href="http://demo.ufothemes.com/shopster/order-tracking-2/">Track your order</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-668"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-668"><a
+                            class="sf-with-ul" href="http://demo.ufothemes.com/shopster/portfolio-three-column/">Portfolio<span
+                            class="sf-sub-indicator"> »</span></a>
+                        <ul style="visibility: hidden; display: none;" class="sub-menu">
+                            <li id="menu-item-669"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669"><a
+                                    href="http://demo.ufothemes.com/shopster/portfolio-one-column/">Portfolio one
+                                column</a></li>
+                            <li id="menu-item-670"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-670"><a
+                                    href="http://demo.ufothemes.com/shopster/portfolio-two-column/">Portfolio two
+                                column</a></li>
+                            <li id="menu-item-672"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-672"><a
+                                    href="http://demo.ufothemes.com/shopster/portfolio-three-column/">Portfolio three
+                                column</a></li>
+                            <li id="menu-item-671"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-671"><a
+                                    href="http://demo.ufothemes.com/shopster/portfolio-four-column/">Portfolio four
+                                column</a></li>
+                            <li id="menu-item-695"
+                                class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-695"><a
+                                    href="http://demo.ufothemes.com/shopster/portfolio/im-on-a-boat/">Images</a></li>
+                            <li id="menu-item-694"
+                                class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-694"><a
+                                    href="http://demo.ufothemes.com/shopster/portfolio/gallery/">Slideshow Gallery</a>
+                            </li>
+                            <li id="menu-item-693"
+                                class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-693"><a
+                                    href="http://demo.ufothemes.com/shopster/portfolio/video/">Video</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-573"
+                        class="megamenu menu-item menu-item-type-custom menu-item-object-custom menu-item-573"><a
+                            class="sf-with-ul" href="#">Pages<span class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;" class="sub-menu">
+                            <li id="menu-item-575"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-575"><a
+                                    class="sf-with-ul" href="#">Pages<span class="sf-sub-indicator"> »</span></a>
+                                <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                    <li id="menu-item-679"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-679">
+                                        <a href="http://demo.ufothemes.com/shopster/sitemap/">Sitemap</a></li>
+                                    <li id="menu-item-574"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-574"><a
+                                            href="http://demo.ufothemes.com/shopster/?page_id=417432">404 – not
+                                        found</a></li>
+                                    <li id="menu-item-675"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-675">
+                                        <a href="http://demo.ufothemes.com/shopster/page-fullwidth/">Page fullwidth</a>
+                                    </li>
+                                    <li id="menu-item-676"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-676">
+                                        <a href="http://demo.ufothemes.com/shopster/page-with-sidebar/">Page with
+                                            sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-577"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-577"><a
+                                    class="sf-with-ul" href="#">Meet the team<span
+                                    class="sf-sub-indicator"> »</span></a>
+                                <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                    <li id="menu-item-678"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-678">
+                                        <a href="http://demo.ufothemes.com/shopster/team-grid/">Team – grid view</a>
+                                    </li>
+                                    <li id="menu-item-677"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-677">
+                                        <a href="http://demo.ufothemes.com/shopster/team-list/">Team – list view</a>
+                                    </li>
+                                    <li id="menu-item-692"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-692">
+                                        <a href="http://demo.ufothemes.com/shopster/services/">Services</a></li>
+                                    <li id="menu-item-698"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-698">
+                                        <a href="http://demo.ufothemes.com/shopster/258-retina-ready-icons/">258 Retina
+                                            ready icons</a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-576"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-576"><a
+                                    class="sf-with-ul" href="#">Blog<span class="sf-sub-indicator"> »</span></a>
+                                <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                    <li id="menu-item-680"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-680">
+                                        <a href="http://demo.ufothemes.com/shopster/blog-with-sidebar/">Blog with
+                                            sidebar</a></li>
+                                    <li id="menu-item-681"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-681">
+                                        <a href="http://demo.ufothemes.com/shopster/blog-fullwidth/">Blog fullwidth</a>
+                                    </li>
+                                    <li id="menu-item-690"
+                                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-690">
+                                        <a href="http://demo.ufothemes.com/shopster/2013/06/11/gallery-post/">Gallery
+                                            post</a></li>
+                                    <li id="menu-item-689"
+                                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-689">
+                                        <a href="http://demo.ufothemes.com/shopster/2013/06/11/image-post/">Image
+                                            post</a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-578"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-578"><a
+                                    class="sf-with-ul" href="#">Portfolio<span class="sf-sub-indicator"> »</span></a>
+                                <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                    <li id="menu-item-683"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-683">
+                                        <a href="http://demo.ufothemes.com/shopster/portfolio-one-column/">Portfolio one
+                                            column</a></li>
+                                    <li id="menu-item-684"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-684">
+                                        <a href="http://demo.ufothemes.com/shopster/portfolio-two-column/">Portfolio two
+                                            column</a></li>
+                                    <li id="menu-item-686"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-686">
+                                        <a href="http://demo.ufothemes.com/shopster/portfolio-three-column/">Portfolio
+                                            three column</a></li>
+                                    <li id="menu-item-685"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685">
+                                        <a href="http://demo.ufothemes.com/shopster/portfolio-four-column/">Portfolio
+                                            four column</a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-579"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-579"><a
+                                    class="sf-with-ul" href="#">Shop<span class="sf-sub-indicator"> »</span></a>
+                                <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                    <li id="menu-item-697"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item menu-item-697">
+                                        <a href="http://demo.ufothemes.com/shopster/shop/">Shop</a></li>
+                                    <li id="menu-item-688"
+                                        class="menu-item menu-item-type-post_type menu-item-object-product menu-item-688">
+                                        <a href="http://demo.ufothemes.com/shopster/product/ripped-denim/">Single
+                                            product + sidebar</a></li>
+                                    <li id="menu-item-583"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-583"><a
+                                            href="http://demo.ufothemes.com/shopster/?product=knitted-blazer&amp;product_sidebar=no">Single
+                                        product fullwidth</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-492"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-492"><a
+                            class="sf-with-ul" href="http://demo.ufothemes.com/shopster/category/blog/">Blog<span
+                            class="sf-sub-indicator"> »</span></a>
+                        <ul style="display: none; visibility: hidden;" class="sub-menu">
+                            <li id="menu-item-682"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-682"><a
+                                    href="http://demo.ufothemes.com/shopster/blog-with-sidebar/">Blog with sidebar</a>
+                            </li>
+                            <li id="menu-item-674"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-674"><a
+                                    href="http://demo.ufothemes.com/shopster/blog-fullwidth/">Blog Fullwidth</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-662"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-662"><a
+                            href="http://demo.ufothemes.com/shopster/shortcodes/">Shortcodes</a></li>
+                    <li id="menu-item-663"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-663"><a
+                            href="http://demo.ufothemes.com/shopster/contact/">Contact</a></li>
+                </ul>
+                <a href="#" id="mobile_nav" class="closed"><span class="icon-menu-3"></span>Menu
+                    <ul id="mobile_menu" class="">
+                        <li id="menu-item-493"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-493">
+                            <a class="sf-with-ul" href="http://demo.ufothemes.com/shopster/">Home<span
+                                    class="sf-sub-indicator"> »</span></a>
+                            <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                <li id="menu-item-494"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-494">
+                                    <a href="http://demo.ufothemes.com/shopster/">Homepage 1</a></li>
+                                <li id="menu-item-665"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-665"><a
+                                        href="http://demo.ufothemes.com/shopster/homesidebarwidgets/">Homepage 2</a>
+                                </li>
+                                <li id="menu-item-664"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-664"><a
+                                        href="http://demo.ufothemes.com/shopster/homesidebar/">Homepage 3</a></li>
+                                <li id="menu-item-666"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-666"><a
+                                        href="http://demo.ufothemes.com/shopster/home-products/">Homepage 4</a></li>
+                                <li id="menu-item-585"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-585"><a>and
+                                    many more…</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-584"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-584"><a
+                                class="sf-with-ul"
+                                href="http://demo.ufothemes.com/shopster/?post_type=product&amp;shop_sidebar=no">Shop<span
+                                class="sf-sub-indicator"> »</span></a>
+                            <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                <li id="menu-item-691"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item menu-item-691">
+                                    <a href="http://demo.ufothemes.com/shopster/shop/">Shop with sidebar</a></li>
+                                <li id="menu-item-580"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-580"><a
+                                        href="http://demo.ufothemes.com/shopster/?post_type=product&amp;shop_sidebar=no">Shop
+                                    fullwidth</a></li>
+                                <li id="menu-item-581"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-581"><a
+                                        href="http://demo.ufothemes.com/shopster/?product=knitted-blazer">Single product
+                                    + sidebar</a></li>
+                                <li id="menu-item-582"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-582"><a
+                                        href="http://demo.ufothemes.com/shopster/?product=knitted-blazer&amp;product_sidebar=no">Single
+                                    product fullwidth</a></li>
+                                <li id="menu-item-687"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-687"><a
+                                        href="http://demo.ufothemes.com/shopster/order-tracking-2/">Track your order</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-668"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-668"><a
+                                class="sf-with-ul" href="http://demo.ufothemes.com/shopster/portfolio-three-column/">Portfolio<span
+                                class="sf-sub-indicator"> »</span></a>
+                            <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                <li id="menu-item-669"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669"><a
+                                        href="http://demo.ufothemes.com/shopster/portfolio-one-column/">Portfolio one
+                                    column</a></li>
+                                <li id="menu-item-670"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-670"><a
+                                        href="http://demo.ufothemes.com/shopster/portfolio-two-column/">Portfolio two
+                                    column</a></li>
+                                <li id="menu-item-672"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-672"><a
+                                        href="http://demo.ufothemes.com/shopster/portfolio-three-column/">Portfolio
+                                    three column</a></li>
+                                <li id="menu-item-671"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-671"><a
+                                        href="http://demo.ufothemes.com/shopster/portfolio-four-column/">Portfolio four
+                                    column</a></li>
+                                <li id="menu-item-695"
+                                    class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-695">
+                                    <a href="http://demo.ufothemes.com/shopster/portfolio/im-on-a-boat/">Images</a></li>
+                                <li id="menu-item-694"
+                                    class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-694">
+                                    <a href="http://demo.ufothemes.com/shopster/portfolio/gallery/">Slideshow
+                                        Gallery</a></li>
+                                <li id="menu-item-693"
+                                    class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-693">
+                                    <a href="http://demo.ufothemes.com/shopster/portfolio/video/">Video</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-573"
+                            class="megamenu menu-item menu-item-type-custom menu-item-object-custom menu-item-573"><a
+                                class="sf-with-ul" href="#">Pages<span class="sf-sub-indicator"> »</span></a>
+                            <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                <li id="menu-item-575"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-575"><a
+                                        class="sf-with-ul" href="#">Pages<span class="sf-sub-indicator"> »</span></a>
+                                    <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                        <li id="menu-item-679"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-679">
+                                            <a href="http://demo.ufothemes.com/shopster/sitemap/">Sitemap</a></li>
+                                        <li id="menu-item-574"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-574">
+                                            <a href="http://demo.ufothemes.com/shopster/?page_id=417432">404 – not
+                                                found</a></li>
+                                        <li id="menu-item-675"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-675">
+                                            <a href="http://demo.ufothemes.com/shopster/page-fullwidth/">Page
+                                                fullwidth</a></li>
+                                        <li id="menu-item-676"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-676">
+                                            <a href="http://demo.ufothemes.com/shopster/page-with-sidebar/">Page with
+                                                sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-577"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-577"><a
+                                        class="sf-with-ul" href="#">Meet the team<span
+                                        class="sf-sub-indicator"> »</span></a>
+                                    <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                        <li id="menu-item-678"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-678">
+                                            <a href="http://demo.ufothemes.com/shopster/team-grid/">Team – grid view</a>
+                                        </li>
+                                        <li id="menu-item-677"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-677">
+                                            <a href="http://demo.ufothemes.com/shopster/team-list/">Team – list view</a>
+                                        </li>
+                                        <li id="menu-item-692"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-692">
+                                            <a href="http://demo.ufothemes.com/shopster/services/">Services</a></li>
+                                        <li id="menu-item-698"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-698">
+                                            <a href="http://demo.ufothemes.com/shopster/258-retina-ready-icons/">258
+                                                Retina ready icons</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-576"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-576"><a
+                                        class="sf-with-ul" href="#">Blog<span class="sf-sub-indicator"> »</span></a>
+                                    <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                        <li id="menu-item-680"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-680">
+                                            <a href="http://demo.ufothemes.com/shopster/blog-with-sidebar/">Blog with
+                                                sidebar</a></li>
+                                        <li id="menu-item-681"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-681">
+                                            <a href="http://demo.ufothemes.com/shopster/blog-fullwidth/">Blog
+                                                fullwidth</a></li>
+                                        <li id="menu-item-690"
+                                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-690">
+                                            <a href="http://demo.ufothemes.com/shopster/2013/06/11/gallery-post/">Gallery
+                                                post</a></li>
+                                        <li id="menu-item-689"
+                                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-689">
+                                            <a href="http://demo.ufothemes.com/shopster/2013/06/11/image-post/">Image
+                                                post</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-578"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-578"><a
+                                        class="sf-with-ul" href="#">Portfolio<span
+                                        class="sf-sub-indicator"> »</span></a>
+                                    <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                        <li id="menu-item-683"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-683">
+                                            <a href="http://demo.ufothemes.com/shopster/portfolio-one-column/">Portfolio
+                                                one column</a></li>
+                                        <li id="menu-item-684"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-684">
+                                            <a href="http://demo.ufothemes.com/shopster/portfolio-two-column/">Portfolio
+                                                two column</a></li>
+                                        <li id="menu-item-686"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-686">
+                                            <a href="http://demo.ufothemes.com/shopster/portfolio-three-column/">Portfolio
+                                                three column</a></li>
+                                        <li id="menu-item-685"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685">
+                                            <a href="http://demo.ufothemes.com/shopster/portfolio-four-column/">Portfolio
+                                                four column</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-579"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-579"><a
+                                        class="sf-with-ul" href="#">Shop<span class="sf-sub-indicator"> »</span></a>
+                                    <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                        <li id="menu-item-697"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item menu-item-697">
+                                            <a href="http://demo.ufothemes.com/shopster/shop/">Shop</a></li>
+                                        <li id="menu-item-688"
+                                            class="menu-item menu-item-type-post_type menu-item-object-product menu-item-688">
+                                            <a href="http://demo.ufothemes.com/shopster/product/ripped-denim/">Single
+                                                product + sidebar</a></li>
+                                        <li id="menu-item-583"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-583">
+                                            <a href="http://demo.ufothemes.com/shopster/?product=knitted-blazer&amp;product_sidebar=no">Single
+                                                product fullwidth</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-492"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-492"><a
+                                class="sf-with-ul" href="http://demo.ufothemes.com/shopster/category/blog/">Blog<span
+                                class="sf-sub-indicator"> »</span></a>
+                            <ul style="display: none; visibility: hidden;" class="sub-menu">
+                                <li id="menu-item-682"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-682"><a
+                                        href="http://demo.ufothemes.com/shopster/blog-with-sidebar/">Blog with
+                                    sidebar</a></li>
+                                <li id="menu-item-674"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-674"><a
+                                        href="http://demo.ufothemes.com/shopster/blog-fullwidth/">Blog Fullwidth</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-662"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-662"><a
+                                href="http://demo.ufothemes.com/shopster/shortcodes/">Shortcodes</a></li>
+                        <li id="menu-item-663"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-663"><a
+                                href="http://demo.ufothemes.com/shopster/contact/">Contact</a></li>
+                    </ul>
+                </a> <a href="javascript:void(0)" id="search-toggle"><span class="icon-search"></span></a>
+
+                <div id="searchbar">
+                    <div class="search-form">
+                        <form method="get" id="searchform" action="http://demo.ufothemes.com/shopster/">
+                            <div>
+                                <input name="s" class="s" value="" x-webkit-speech="" type="text">
+                                <input class="searchsubmit" value="" type="submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- #main-menu-wrap -->
+        </div>
+        <!-- #header-inner -->
+    </div>
+    <!-- #header  -->
+</div>
+<!-- #header-wrap -->
+</div>
+#{doLayout /}
+</body>
 </html>

@@ -14,9 +14,9 @@ public class Application extends Controller {
         render();
     }
 
-    public static void addArticulo(int cantidad, String notas, Blob photo ){
+    public static void addArticulo(int cantidad, Referencia referencia){
 
-        Articulo articulo = new Articulo(cantidad, notas, photo);
+        Articulo articulo = new Articulo(cantidad, referencia);
         articulo.save();
 
 

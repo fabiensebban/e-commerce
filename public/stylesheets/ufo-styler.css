@@ -1,0 +1,73 @@
+#color-picker-primary, #color-picker-secondary, #color-picker-menu, #color-picker-header-text, #color-picker-header-text-p, #color-picker-nav, #color-picker-bg {
+	display:block;
+	height:28px;
+	width:28px;
+}
+#color-picker-primary {
+	background: url(colorpicker/images/select2.png) center;
+	background-color:#fcfcfc;
+}
+#color-picker-secondary {
+	background: url(colorpicker/images/select2.png) center;
+	background-color:#2abbf2;
+}
+#color-picker-header-text {
+	background: url(colorpicker/images/select2.png) center;
+	background-color:#444;
+}
+#color-picker-header-text-p {
+	background: url(colorpicker/images/select2.png) center;
+	background-color:#444;
+}
+#color-picker-nav {
+	background: url(colorpicker/images/select2.png) center;
+	background-color:#f6f6f6;
+}
+#color-picker-menu {
+	background: url(colorpicker/images/select2.png) center;
+	background-color:#999;
+	margin-bottom:0;
+}
+#color-picker-bg {
+	background: url(colorpicker/images/select2.png) center;
+	background-color:#fff;
+	margin-bottom:0;
+}
+.colorpicker {
+	z-index:3;
+}
+
+#ufo-styler {
+	position:fixed;
+	top:50px;
+	left:0;
+	padding:10px;
+	background:#f6f6f6;
+	border:1px solid #ccc;
+	border-left:0;
+	border-radius:0 4px 4px 0;
+	-webkit-border-radius:0 4px 4px 0;
+	-moz-border-radius:0 4px 4px 0;
+	box-shadow:0 0 6px rgba(0,0,0, 0.3);
+	-moz-box-shadow:0 0 6px rgba(0,0,0, 0.3);
+	-webkit-box-shadow:0 0 6px rgba(0,0,0, 0.3);
+	z-index:3;
+}
+
+#ufo-styler-toggle {
+	width: 32px;
+	height: 32px;
+	background: url(icon.png) no-repeat center center #fff;
+	position: absolute;
+	right: -35px;
+	border: 1px solid #ddd;
+	top: 2px;
+	border-radius: 0 4px 4px 0;
+	-webkit-border-radius: 0 4px 4px 0;
+	-moz-border-radius: 0 4px 4px 0;
+	cursor:pointer;
+}
+
+.styler-hidden {
+	left:-50px !important;
+}

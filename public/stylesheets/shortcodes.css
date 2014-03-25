@@ -1,0 +1,1045 @@
+/*  SHORTCODES  */
+.ufo-shortcode.half, .ufo-shortcode.half-last {float:left;width:48%;margin-right:4%;}
+.ufo-shortcode.half-last {margin-right:0}
+
+.ufo-shortcode.third, .ufo-shortcode.third-last {float:left;width:30%;margin-right:5%;}
+.ufo-shortcode.third-last {margin-right:0}
+
+.ufo-shortcode.fourth, .ufo-shortcode.fourth-last {float:left;width:23%;margin-right:2%;}
+.ufo-shortcode.fourth-last {margin-right:0}
+
+.ufo-shortcode.box, .ufo-shortcode.code {
+background:#FFF;
+border:1px solid #CCCCCC;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+padding:10px;
+margin:10px 0px;
+clear:both;
+}
+
+a.ufo-code-toggle {float:left;clear:both; width:100%;}
+
+img.ufo-shortcode.half-image, img.ufo-shortcode.half-image-last {float:left;width:46%;padding:4px;border:1px solid #EAEAEA;margin:10px 0;margin-right:4%;}
+
+img.ufo-shortcode.half-image-last {margin-right:0px;}
+
+img.ufo-shortcode.third-image, img.ufo-shortcode.third-image-last {float:left;width:30%;margin:10px 0;margin-right:2%;padding:4px;border:1px solid #EAEAEA;float:left;}
+
+img.ufo-shortcode.third-image-last {margin-right:0px;}
+
+.ufo-shortcode.hilite {background-color:#fff000;}
+.ufo-shortcode.google-map {padding:4px;background: none repeat scroll 0 0 #F9F9F9;
+   border: 1px solid #DFDFDF;margin-bottom:15px;max-width:100%;}
+
+hr.ufo-shortcode  {
+height: 1px;
+border: none;
+border-top: solid 1px #CCC;
+clear: both;
+}
+
+.clearboth {clear:both;}
+
+
+/* BUTTONS */
+a.ufo-shortcode.button {
+background-color: #FFF;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #efefef));
+background-image: -webkit-linear-gradient(top, #fefefe, #efefef);
+background-image: -moz-linear-gradient(top, #fefefe, #efefef);
+background-image: -ms-linear-gradient(top, #fefefe, #efefef);
+background-image: -o-linear-gradient(top, #fefefe, #efefef);
+background-image: linear-gradient(top, #fefefe, #efefef);
+border: 1px solid #ddd;
+border-bottom: 1px solid #BBB;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+color: #333;
+line-height: 1;
+padding: 8px 12px;
+text-align: center;
+text-shadow: 1px 1px 0 #FFF;
+cursor:pointer;
+font: bold 12px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+color:#3d3d3d;
+float:left;
+margin-right:8px;margin-bottom:4px;
+}
+
+a.ufo-shortcode.button.large { padding:14px 20px; font-size:16px;}
+
+a.ufo-shortcode.button:hover {
+color:#333;
+background-color: #DDD;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eee), color-stop(100%, #ededed));
+background-image: -webkit-linear-gradient(top, #eee, #ededed);
+background-image: -moz-linear-gradient(top, #eee, #ededed);
+background-image: -ms-linear-gradient(top, #eee, #ededed);
+background-image: -o-linear-gradient(top, #eee, #ededed);
+background-image: linear-gradient(top, #eee, #ededed);
+border: 1px solid #ccc;
+border-bottom: 1px solid #999;
+cursor: pointer;
+text-shadow: 0 1px 0 #DDD;
+text-decoration:none;
+}
+
+
+a.ufo-shortcode.button.green {
+background-color: #7FBF4D;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7FBF4D), color-stop(100%, #63A62F));
+background-image: -webkit-linear-gradient(top, #7FBF4D, #63A62F);
+background-image: -moz-linear-gradient(top, #7FBF4D, #63A62F);
+background-image: -ms-linear-gradient(top, #7FBF4D, #63A62F);
+background-image: -o-linear-gradient(top, #7FBF4D, #63A62F);
+background-image: linear-gradient(top, #7FBF4D, #63A62F);
+border: 1px solid #63A62F;
+border-bottom: 1px solid #5B992B;
+-webkit-box-shadow: inset 0 1px 0 0 #96CA6D;
+-moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+box-shadow: inset 0 1px 0 0 #96CA6D;
+color: white;
+text-shadow: 0 -1px 0 #4C9021;
+}
+
+
+a.ufo-shortcode.button.green:hover {
+background-color: #76B347;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76B347), color-stop(100%, #5E9E2E));
+background-image: -webkit-linear-gradient(top, #76B347, #5E9E2E);
+background-image: -moz-linear-gradient(top, #76B347, #5E9E2E);
+background-image: -ms-linear-gradient(top, #76B347, #5E9E2E);
+background-image: -o-linear-gradient(top, #76B347, #5E9E2E);
+background-image: linear-gradient(top, #76B347, #5E9E2E);
+-webkit-box-shadow: inset 0 1px 0 0 #8DBF67;
+-moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+box-shadow: inset 0 1px 0 0 #8DBF67;
+cursor: pointer;
+}
+
+
+a.ufo-shortcode.button.blue {
+background-color: #52A8E8;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #52A8E8), color-stop(100%, #377AD0));
+background-image: -webkit-linear-gradient(top, #52A8E8, #377AD0);
+background-image: -moz-linear-gradient(top, #52A8E8, #377AD0);
+background-image: -ms-linear-gradient(top, #52A8E8, #377AD0);
+background-image: -o-linear-gradient(top, #52A8E8, #377AD0);
+background-image: linear-gradient(top, #52A8E8, #377AD0);
+border-top: 1px solid #4081AF;
+border-right: 1px solid #2E69A3;
+border-bottom: 1px solid #20559A;
+border-left: 1px solid #2E69A3;
+-webkit-box-shadow: inset 0 1px 0 0 #72B9EB, 0 1px 2px 0 #B3B3B3;
+-moz-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+box-shadow: inset 0 1px 0 0 #72B9EB, 0 1px 2px 0 #B3B3B3;
+color: white;
+text-shadow: 0 -1px 1px #3275BC;
+-webkit-background-clip: padding-box;
+}
+
+a.ufo-shortcode.button.blue:hover {
+background-color: #3E9EE5;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3E9EE5), color-stop(100%, #206BCB));
+background-image: -webkit-linear-gradient(top, #3E9EE5 0%, #206BCB 100%);
+background-image: -moz-linear-gradient(top, #3E9EE5 0%, #206BCB 100%);
+background-image: -ms-linear-gradient(top, #3E9EE5 0%, #206BCB 100%);
+background-image: -o-linear-gradient(top, #3E9EE5 0%, #206BCB 100%);
+background-image: linear-gradient(top, #3E9EE5 0%, #206BCB 100%);
+border-top: 1px solid #2A73A6;
+border-right: 1px solid #165899;
+border-bottom: 1px solid #07428F;
+border-left: 1px solid #165899;
+-webkit-box-shadow: inset 0 1px 0 0 #62B1E9;
+-moz-box-shadow: inset 0 1px 0 0 #62b1e9;
+box-shadow: inset 0 1px 0 0 #62B1E9;
+cursor: pointer;
+text-shadow: 0 -1px 1px #1D62AB;
+}
+
+
+a.ufo-shortcode.button.red {
+background-color: #EE432E;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EE432E), color-stop(50%, #C63929), color-stop(50%, #B51700), color-stop(100%, #891100));
+background-image: -webkit-linear-gradient(top, #EE432E 0%, #C63929 50%, #B51700 50%, #891100 100%);
+background-image: -moz-linear-gradient(top, #EE432E 0%, #C63929 50%, #B51700 50%, #891100 100%);
+background-image: -ms-linear-gradient(top, #EE432E 0%, #C63929 50%, #B51700 50%, #891100 100%);
+background-image: -o-linear-gradient(top, #EE432E 0%, #C63929 50%, #B51700 50%, #891100 100%);
+background-image: linear-gradient(top, #EE432E 0%, #C63929 50%, #B51700 50%, #891100 100%);
+border: 1px solid #951100;
+color: white;
+text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
+}
+
+a.ufo-shortcode.button.red:hover {
+background-color: #F37873;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F37873), color-stop(50%, #DB504D), color-stop(50%, #CB0500), color-stop(100%, #A20601));
+background-image: -webkit-linear-gradient(top, #F37873 0%, #DB504D 50%, #CB0500 50%, #A20601 100%);
+background-image: -moz-linear-gradient(top, #F37873 0%, #DB504D 50%, #CB0500 50%, #A20601 100%);
+background-image: -ms-linear-gradient(top, #F37873 0%, #DB504D 50%, #CB0500 50%, #A20601 100%);
+background-image: -o-linear-gradient(top, #F37873 0%, #DB504D 50%, #CB0500 50%, #A20601 100%);
+background-image: linear-gradient(top, #F37873 0%, #DB504D 50%, #CB0500 50%, #A20601 100%);
+cursor: pointer;
+}
+
+
+a.ufo-shortcode.button.black {
+	-webkit-box-shadow: inset 0 0 1px 1px #4D4D4D;
+	-moz-box-shadow: inset 0 0 1px 1px #4D4D4D;
+	-ms-box-shadow: inset 0 0 1px 1px #4D4D4D;
+	-o-box-shadow: inset 0 0 1px 1px #4D4D4D;
+	box-shadow: inset 0 0 1px 1px #4D4D4D;
+	background: none repeat scroll 0 0 #2d2d2d;
+	border: 1px solid #333333;
+	color: #FFFFFF;
+	text-shadow: none;
+}
+
+a.ufo-shortcode.button.black:hover {
+	background: #3d3d3d;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+
+a.ufo-shortcode.button.purple {
+background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #9E76E8), color-stop(1, #6224DE));
+color: white;
+text-shadow: 0px -1px 1px #473569;
+}
+
+a.ufo-shortcode.button.purple:hover {
+background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #8D69CF), color-stop(1, #561FC4));
+cursor: pointer;
+}
+
+
+.ufo-shortcode.map .map-container {
+margin: 0 0 15px;
+border: solid 1px #CCC;
+max-width:100%;
+}
+
+/* =Responsiveness: Mobile (Portrait)
+================================================== */
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+	.ufo-shortcode.half, .ufo-shortcode.half-last, .ufo-shortcode.third, .ufo-shortcode.third-last, .ufo-shortcode.fourth, .ufo-shortcode.fourth-last {width:100%;max-width:100%;margin-right:0}
+}
+/* =Responsiveness: Mobile (Landscape)
+================================================== */
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* #Icons
+================================================== */
+
+@font-face {
+	font-family: 'icons';
+	src:url('../images/fonts/icons/icons.eot');
+	src:url('../images/fonts/icons/icons.eot?#iefix') format('embedded-opentype'),
+		url('../images/fonts/icons/icons.woff') format('woff'),
+		url('../images/fonts/icons/icons.ttf') format('truetype'),
+		url('../images/fonts/icons/icons.svg#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icons-"] {
+*/
+.icons-menu, .icons-earth, .icons-link, .icons-list, .icons-cart, .icons-home, .icons-home-2, .icons-star, .icons-heart, .icons-close, .icons-cancel-circle, .icons-google-plus, .icons-feed, .icons-twitter, .icons-facebook, .icons-vimeo2, .icons-dribbble, .icons-pinterest, .icons-cart-2, .icons-feed-2, .icons-facebook-2, .icons-google-plus-2, .icons-twitter-2, .icons-youtube, .icons-vimeo2-2, .icons-pinterest-2, .icons-menu-2, .icons-earth-2, .icons-link-2, .icons-close-2, .icons-heart-2, .icons-dribbble-2, .icons-menu-3, .icons-quotes-left, .icons-quotes-right, .icons-eye, .icons-bag, .icons-basket, .icons-basket-2, .icons-search, .icons-home-3, .icons-arrow-up, .icons-arrow-right, .icons-arrow-down, .icons-arrow-left, .icons-pencil, .icons-palette, .icons-paint-format, .icons-image, .icons-images, .icons-images-2, .icons-camera, .icons-camera-2, .icons-music, .icons-music-2, .icons-headphones, .icons-play, .icons-movie, .icons-camera-3, .icons-camera-4, .icons-gamepad, .icons-gamepad-2, .icons-connection, .icons-mic, .icons-mic-2, .icons-book, .icons-graduation, .icons-file, .icons-file-download, .icons-file-upload, .icons-folder, .icons-folder-open, .icons-tag, .icons-tag-2, .icons-tag-3, .icons-tag-4, .icons-tag-5, .icons-cart-3, .icons-bag-2, .icons-credit, .icons-calculate, .icons-support, .icons-phone, .icons-phone-2, .icons-phone-3, .icons-envelop, .icons-pushpin, .icons-location, .icons-location-2, .icons-compass, .icons-compass-2, .icons-map, .icons-clock, .icons-clock-2, .icons-print, .icons-screen, .icons-mobile, .icons-tablet, .icons-tv, .icons-cd, .icons-bubble, .icons-bubbles, .icons-user, .icons-users, .icons-user-2, .icons-users-2, .icons-tshirt, .icons-hanger, .icons-busy, .icons-binoculars, .icons-search-2, .icons-expand, .icons-contract, .icons-key, .icons-key-2, .icons-unlocked, .icons-lock, .icons-wrench, .icons-wrench-2, .icons-cogs, .icons-cog, .icons-screwdriver, .icons-hammer, .icons-aid, .icons-bug, .icons-pie, .icons-pie-2, .icons-pie-3, .icons-stats, .icons-bars, .icons-stats-up, .icons-stats-down, .icons-gift, .icons-gift-2, .icons-food, .icons-leaf, .icons-cup, .icons-tree, .icons-apple-fruit, .icons-paw, .icons-steps, .icons-hammer-2, .icons-atom, .icons-lab, .icons-magnet, .icons-lamp, .icons-remove, .icons-airplane, .icons-car, .icons-bus, .icons-truck, .icons-boat, .icons-cube, .icons-pyramid, .icons-puzzle, .icons-glasses, .icons-sun-glasses, .icons-switch, .icons-power-cord, .icons-list-2, .icons-grid, .icons-cloud, .icons-cloud-2, .icons-upload, .icons-download, .icons-globe, .icons-link-3, .icons-link-4, .icons-anchor, .icons-flag, .icons-attachment, .icons-eye-2, .icons-weather-rain, .icons-weather-lightning, .icons-weather-snow, .icons-windy, .icons-fan, .icons-umbrella, .icons-contrast, .icons-heart-3, .icons-thumbs-up, .icons-thumbs-down, .icons-thumbs-up-2, .icons-thumbs-up-3, .icons-people, .icons-man, .icons-male, .icons-woman, .icons-female, .icons-smiley, .icons-checkmark-circle, .icons-cancel-circle-2, .icons-checkmark, .icons-plus, .icons-minus, .icons-play-2, .icons-pause, .icons-stop, .icons-backward, .icons-forward, .icons-volume-high, .icons-volume-mute, .icons-volume-mute-2, .icons-arrow-up-left, .icons-arrow-up-2, .icons-arrow-up-right, .icons-arrow-down-right, .icons-arrow-down-2, .icons-arrow-down-left, .icons-arrow-left-2, .icons-arrow-right-2, .icons-radio-checked, .icons-circle, .icons-square, .icons-checkbox-unchecked, .icons-paragraph-center, .icons-paragraph-left, .icons-paragraph-justify, .icons-paragraph-right, .icons-twitter-3, .icons-facebook-3, .icons-google-plus-3, .icons-vimeo, .icons-dribbble-3, .icons-wordpress, .icons-wordpress-2, .icons-tumblr, .icons-tumblr-2, .icons-paypal, .icons-paypal-2, .icons-chrome, .icons-firefox, .icons-IE, .icons-opera, .icons-safari, .icons-android, .icons-apple, .icons-feed-3, .icons-delicious, .icons-lastfm, .icons-skype, .icons-windows8, .icons-windows, .icons-flickr, .icons-picassa, .icons-deviantart, .icons-brush, .icons-eyedropper, .icons-bubble-check, .icons-bubble-user, .icons-bubble-quote, .icons-glass, .icons-bottle, .icons-mug, .icons-rocket, .icons-briefcase, .icons-bike, .icons-lightning {
+	font-family: 'icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icons-menu:before {
+	content: "\e000";
+}
+.icons-earth:before {
+	content: "\e001";
+}
+.icons-link:before {
+	content: "\e002";
+}
+.icons-list:before {
+	content: "\e003";
+}
+.icons-cart:before {
+	content: "\e004";
+}
+.icons-home:before {
+	content: "\e005";
+}
+.icons-home-2:before {
+	content: "\e006";
+}
+.icons-star:before {
+	content: "\e007";
+}
+.icons-heart:before {
+	content: "\e008";
+}
+.icons-close:before {
+	content: "\e009";
+}
+.icons-cancel-circle:before {
+	content: "\e00a";
+}
+.icons-google-plus:before {
+	content: "\e00b";
+}
+.icons-feed:before {
+	content: "\e00c";
+}
+.icons-twitter:before {
+	content: "\e00d";
+}
+.icons-facebook:before {
+	content: "\e00e";
+}
+.icons-vimeo2:before {
+	content: "\e00f";
+}
+.icons-dribbble:before {
+	content: "\e010";
+}
+.icons-pinterest:before {
+	content: "\e011";
+}
+.icons-cart-2:before {
+	content: "\e014";
+}
+.icons-feed-2:before {
+	content: "\e017";
+}
+.icons-facebook-2:before {
+	content: "\e018";
+}
+.icons-google-plus-2:before {
+	content: "\e019";
+}
+.icons-twitter-2:before {
+	content: "\e01a";
+}
+.icons-youtube:before {
+	content: "\e01b";
+}
+.icons-vimeo2-2:before {
+	content: "\e01c";
+}
+.icons-pinterest-2:before {
+	content: "\e01d";
+}
+.icons-menu-2:before {
+	content: "\e01e";
+}
+.icons-earth-2:before {
+	content: "\e025";
+}
+.icons-link-2:before {
+	content: "\e026";
+}
+.icons-close-2:before {
+	content: "\e027";
+}
+.icons-heart-2:before {
+	content: "\e029";
+}
+.icons-dribbble-2:before {
+	content: "\e02a";
+}
+.icons-menu-3:before {
+	content: "\e02b";
+}
+.icons-quotes-left:before {
+	content: "\e02c";
+}
+.icons-quotes-right:before {
+	content: "\e02d";
+}
+.icons-eye:before {
+	content: "\e02f";
+}
+.icons-bag:before {
+	content: "\e030";
+}
+.icons-basket:before {
+	content: "\e031";
+}
+.icons-basket-2:before {
+	content: "\e032";
+}
+.icons-search:before {
+	content: "\e033";
+}
+.icons-home-3:before {
+	content: "\e015";
+}
+.icons-arrow-up:before {
+	content: "\e024";
+}
+.icons-arrow-right:before {
+	content: "\e021";
+}
+.icons-arrow-down:before {
+	content: "\e023";
+}
+.icons-arrow-left:before {
+	content: "\e022";
+}
+.icons-pencil:before {
+	content: "\e016";
+}
+.icons-palette:before {
+	content: "\e01f";
+}
+.icons-paint-format:before {
+	content: "\e020";
+}
+.icons-image:before {
+	content: "\e028";
+}
+.icons-images:before {
+	content: "\e02e";
+}
+.icons-images-2:before {
+	content: "\e034";
+}
+.icons-camera:before {
+	content: "\e035";
+}
+.icons-camera-2:before {
+	content: "\e037";
+}
+.icons-music:before {
+	content: "\e036";
+}
+.icons-music-2:before {
+	content: "\e039";
+}
+.icons-headphones:before {
+	content: "\e038";
+}
+.icons-play:before {
+	content: "\e03a";
+}
+.icons-movie:before {
+	content: "\e03b";
+}
+.icons-camera-3:before {
+	content: "\e03c";
+}
+.icons-camera-4:before {
+	content: "\e03d";
+}
+.icons-gamepad:before {
+	content: "\e03e";
+}
+.icons-gamepad-2:before {
+	content: "\e03f";
+}
+.icons-connection:before {
+	content: "\e040";
+}
+.icons-mic:before {
+	content: "\e041";
+}
+.icons-mic-2:before {
+	content: "\e042";
+}
+.icons-book:before {
+	content: "\e043";
+}
+.icons-graduation:before {
+	content: "\e044";
+}
+.icons-file:before {
+	content: "\e045";
+}
+.icons-file-download:before {
+	content: "\e046";
+}
+.icons-file-upload:before {
+	content: "\e047";
+}
+.icons-folder:before {
+	content: "\e048";
+}
+.icons-folder-open:before {
+	content: "\e049";
+}
+.icons-tag:before {
+	content: "\e04a";
+}
+.icons-tag-2:before {
+	content: "\e04b";
+}
+.icons-tag-3:before {
+	content: "\e04c";
+}
+.icons-tag-4:before {
+	content: "\e04d";
+}
+.icons-tag-5:before {
+	content: "\e04e";
+}
+.icons-cart-3:before {
+	content: "\e04f";
+}
+.icons-bag-2:before {
+	content: "\e012";
+}
+.icons-credit:before {
+	content: "\e013";
+}
+.icons-calculate:before {
+	content: "\e050";
+}
+.icons-support:before {
+	content: "\e051";
+}
+.icons-phone:before {
+	content: "\e052";
+}
+.icons-phone-2:before {
+	content: "\e053";
+}
+.icons-phone-3:before {
+	content: "\e054";
+}
+.icons-envelop:before {
+	content: "\e055";
+}
+.icons-pushpin:before {
+	content: "\e056";
+}
+.icons-location:before {
+	content: "\e057";
+}
+.icons-location-2:before {
+	content: "\e058";
+}
+.icons-compass:before {
+	content: "\e059";
+}
+.icons-compass-2:before {
+	content: "\e05a";
+}
+.icons-map:before {
+	content: "\e05b";
+}
+.icons-clock:before {
+	content: "\e05c";
+}
+.icons-clock-2:before {
+	content: "\e05d";
+}
+.icons-print:before {
+	content: "\e05e";
+}
+.icons-screen:before {
+	content: "\e05f";
+}
+.icons-mobile:before {
+	content: "\e060";
+}
+.icons-tablet:before {
+	content: "\e061";
+}
+.icons-tv:before {
+	content: "\e062";
+}
+.icons-cd:before {
+	content: "\e063";
+}
+.icons-bubble:before {
+	content: "\e064";
+}
+.icons-bubbles:before {
+	content: "\e065";
+}
+.icons-user:before {
+	content: "\e066";
+}
+.icons-users:before {
+	content: "\e067";
+}
+.icons-user-2:before {
+	content: "\e068";
+}
+.icons-users-2:before {
+	content: "\e069";
+}
+.icons-tshirt:before {
+	content: "\e06a";
+}
+.icons-hanger:before {
+	content: "\e06b";
+}
+.icons-busy:before {
+	content: "\e06c";
+}
+.icons-binoculars:before {
+	content: "\e06d";
+}
+.icons-search-2:before {
+	content: "\e06e";
+}
+.icons-expand:before {
+	content: "\e06f";
+}
+.icons-contract:before {
+	content: "\e070";
+}
+.icons-key:before {
+	content: "\e071";
+}
+.icons-key-2:before {
+	content: "\e072";
+}
+.icons-unlocked:before {
+	content: "\e074";
+}
+.icons-lock:before {
+	content: "\e075";
+}
+.icons-wrench:before {
+	content: "\e073";
+}
+.icons-wrench-2:before {
+	content: "\e077";
+}
+.icons-cogs:before {
+	content: "\e079";
+}
+.icons-cog:before {
+	content: "\e078";
+}
+.icons-screwdriver:before {
+	content: "\e076";
+}
+.icons-hammer:before {
+	content: "\e07a";
+}
+.icons-aid:before {
+	content: "\e07b";
+}
+.icons-bug:before {
+	content: "\e07c";
+}
+.icons-pie:before {
+	content: "\e07d";
+}
+.icons-pie-2:before {
+	content: "\e07e";
+}
+.icons-pie-3:before {
+	content: "\e07f";
+}
+.icons-stats:before {
+	content: "\e080";
+}
+.icons-bars:before {
+	content: "\e081";
+}
+.icons-stats-up:before {
+	content: "\e082";
+}
+.icons-stats-down:before {
+	content: "\e083";
+}
+.icons-gift:before {
+	content: "\e084";
+}
+.icons-gift-2:before {
+	content: "\e085";
+}
+.icons-food:before {
+	content: "\e086";
+}
+.icons-leaf:before {
+	content: "\e087";
+}
+.icons-cup:before {
+	content: "\e088";
+}
+.icons-tree:before {
+	content: "\e089";
+}
+.icons-apple-fruit:before {
+	content: "\e08a";
+}
+.icons-paw:before {
+	content: "\e08b";
+}
+.icons-steps:before {
+	content: "\e08c";
+}
+.icons-hammer-2:before {
+	content: "\e08d";
+}
+.icons-atom:before {
+	content: "\e08e";
+}
+.icons-lab:before {
+	content: "\e08f";
+}
+.icons-magnet:before {
+	content: "\e090";
+}
+.icons-lamp:before {
+	content: "\e091";
+}
+.icons-remove:before {
+	content: "\e093";
+}
+.icons-airplane:before {
+	content: "\e092";
+}
+.icons-car:before {
+	content: "\e094";
+}
+.icons-bus:before {
+	content: "\e095";
+}
+.icons-truck:before {
+	content: "\e096";
+}
+.icons-boat:before {
+	content: "\e097";
+}
+.icons-cube:before {
+	content: "\e098";
+}
+.icons-pyramid:before {
+	content: "\e099";
+}
+.icons-puzzle:before {
+	content: "\e09a";
+}
+.icons-glasses:before {
+	content: "\e09b";
+}
+.icons-sun-glasses:before {
+	content: "\e09c";
+}
+.icons-switch:before {
+	content: "\e09d";
+}
+.icons-power-cord:before {
+	content: "\e09e";
+}
+.icons-list-2:before {
+	content: "\e09f";
+}
+.icons-grid:before {
+	content: "\e0a0";
+}
+.icons-cloud:before {
+	content: "\e0a1";
+}
+.icons-cloud-2:before {
+	content: "\e0a2";
+}
+.icons-upload:before {
+	content: "\e0a3";
+}
+.icons-download:before {
+	content: "\e0a4";
+}
+.icons-globe:before {
+	content: "\e0a6";
+}
+.icons-link-3:before {
+	content: "\e0a5";
+}
+.icons-link-4:before {
+	content: "\e0a7";
+}
+.icons-anchor:before {
+	content: "\e0a8";
+}
+.icons-flag:before {
+	content: "\e0a9";
+}
+.icons-attachment:before {
+	content: "\e0aa";
+}
+.icons-eye-2:before {
+	content: "\e0ab";
+}
+.icons-weather-rain:before {
+	content: "\e0ac";
+}
+.icons-weather-lightning:before {
+	content: "\e0ad";
+}
+.icons-weather-snow:before {
+	content: "\e0ae";
+}
+.icons-windy:before {
+	content: "\e0af";
+}
+.icons-fan:before {
+	content: "\e0b0";
+}
+.icons-umbrella:before {
+	content: "\e0b1";
+}
+.icons-contrast:before {
+	content: "\e0b2";
+}
+.icons-heart-3:before {
+	content: "\e0b3";
+}
+.icons-thumbs-up:before {
+	content: "\e0b4";
+}
+.icons-thumbs-down:before {
+	content: "\e0b5";
+}
+.icons-thumbs-up-2:before {
+	content: "\e0b6";
+}
+.icons-thumbs-up-3:before {
+	content: "\e0b7";
+}
+.icons-people:before {
+	content: "\e0b8";
+}
+.icons-man:before {
+	content: "\e0b9";
+}
+.icons-male:before {
+	content: "\e0ba";
+}
+.icons-woman:before {
+	content: "\e0bb";
+}
+.icons-female:before {
+	content: "\e0bc";
+}
+.icons-smiley:before {
+	content: "\e0bd";
+}
+.icons-checkmark-circle:before {
+	content: "\e0be";
+}
+.icons-cancel-circle-2:before {
+	content: "\e0bf";
+}
+.icons-checkmark:before {
+	content: "\e0c0";
+}
+.icons-plus:before {
+	content: "\e0c1";
+}
+.icons-minus:before {
+	content: "\e0c2";
+}
+.icons-play-2:before {
+	content: "\e0c3";
+}
+.icons-pause:before {
+	content: "\e0c4";
+}
+.icons-stop:before {
+	content: "\e0c5";
+}
+.icons-backward:before {
+	content: "\e0c6";
+}
+.icons-forward:before {
+	content: "\e0c7";
+}
+.icons-volume-high:before {
+	content: "\e0c8";
+}
+.icons-volume-mute:before {
+	content: "\e0c9";
+}
+.icons-volume-mute-2:before {
+	content: "\e0ca";
+}
+.icons-arrow-up-left:before {
+	content: "\e0cb";
+}
+.icons-arrow-up-2:before {
+	content: "\e0cc";
+}
+.icons-arrow-up-right:before {
+	content: "\e0cd";
+}
+.icons-arrow-down-right:before {
+	content: "\e0ce";
+}
+.icons-arrow-down-2:before {
+	content: "\e0cf";
+}
+.icons-arrow-down-left:before {
+	content: "\e0d0";
+}
+.icons-arrow-left-2:before {
+	content: "\e0d1";
+}
+.icons-arrow-right-2:before {
+	content: "\e0d2";
+}
+.icons-radio-checked:before {
+	content: "\e0d3";
+}
+.icons-circle:before {
+	content: "\e0d4";
+}
+.icons-square:before {
+	content: "\e0d5";
+}
+.icons-checkbox-unchecked:before {
+	content: "\e0d6";
+}
+.icons-paragraph-center:before {
+	content: "\e0d7";
+}
+.icons-paragraph-left:before {
+	content: "\e0d8";
+}
+.icons-paragraph-justify:before {
+	content: "\e0d9";
+}
+.icons-paragraph-right:before {
+	content: "\e0da";
+}
+.icons-twitter-3:before {
+	content: "\e0db";
+}
+.icons-facebook-3:before {
+	content: "\e0dc";
+}
+.icons-google-plus-3:before {
+	content: "\e0dd";
+}
+.icons-vimeo:before {
+	content: "\e0de";
+}
+.icons-dribbble-3:before {
+	content: "\e0df";
+}
+.icons-wordpress:before {
+	content: "\e0e0";
+}
+.icons-wordpress-2:before {
+	content: "\e0e1";
+}
+.icons-tumblr:before {
+	content: "\e0e2";
+}
+.icons-tumblr-2:before {
+	content: "\e0e3";
+}
+.icons-paypal:before {
+	content: "\e0e4";
+}
+.icons-paypal-2:before {
+	content: "\e0e5";
+}
+.icons-chrome:before {
+	content: "\e0e6";
+}
+.icons-firefox:before {
+	content: "\e0e7";
+}
+.icons-IE:before {
+	content: "\e0e8";
+}
+.icons-opera:before {
+	content: "\e0e9";
+}
+.icons-safari:before {
+	content: "\e0ea";
+}
+.icons-android:before {
+	content: "\e0eb";
+}
+.icons-apple:before {
+	content: "\e0ec";
+}
+.icons-feed-3:before {
+	content: "\e0ed";
+}
+.icons-delicious:before {
+	content: "\e0ee";
+}
+.icons-lastfm:before {
+	content: "\e0ef";
+}
+.icons-skype:before {
+	content: "\e0f0";
+}
+.icons-windows8:before {
+	content: "\e0f1";
+}
+.icons-windows:before {
+	content: "\e0f2";
+}
+.icons-flickr:before {
+	content: "\e0f3";
+}
+.icons-picassa:before {
+	content: "\e0f4";
+}
+.icons-deviantart:before {
+	content: "\e0f5";
+}
+.icons-brush:before {
+	content: "\e0f6";
+}
+.icons-eyedropper:before {
+	content: "\e0f7";
+}
+.icons-bubble-check:before {
+	content: "\e0f8";
+}
+.icons-bubble-user:before {
+	content: "\e0f9";
+}
+.icons-bubble-quote:before {
+	content: "\e0fa";
+}
+.icons-glass:before {
+	content: "\e0fb";
+}
+.icons-bottle:before {
+	content: "\e0fc";
+}
+.icons-mug:before {
+	content: "\e0fd";
+}
+.icons-rocket:before {
+	content: "\e0fe";
+}
+.icons-briefcase:before {
+	content: "\e0ff";
+}
+.icons-bike:before {
+	content: "\e100";
+}
+.icons-lightning:before {
+	content: "\e101";
+}

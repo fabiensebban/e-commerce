@@ -2,6 +2,7 @@ package models;
 
 import java.util.*;
 import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.*;
 import  play.db.jpa.Blob;
 import play.data.validation.Required;
@@ -13,6 +14,8 @@ public class Categoria extends Model {
     public String nombre;
     @Required
     public Long IdPadre;
+    @Column
+    @ElementCollection(targetClass=Long.class)
     public List<Long> IdHijos;
     @OneToMany(mappedBy="categoria", cascade=CascadeType.ALL)
     public List<Articulo> articulos;
