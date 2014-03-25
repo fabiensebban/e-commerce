@@ -1,6 +1,7 @@
 package models;
 
 import java.util.*;
+import java.util.ArrayList;
 import javax.persistence.*;
 import  play.db.jpa.Blob;
 import play.data.validation.Required;
@@ -14,13 +15,19 @@ public class Articulo extends Model{
     public String notas;
     @OneToOne
     public Referencia referencia;
+    @OneToMany(mappedBy="articulo", cascade=CascadeType.ALL)
+    public List<Color> colores;
+    @ManyToOne
+    public Categoria categoria;
 
-    public Articulo(int cantidad, String notas, Referencia referencia){
+
+    public Articulo(int cantidad, Referencia referencia){
 
         this.cantidad = cantidad;
-        this.notas = notas;
+        this.notas = "";
         this.referencia = referencia;
-
+        this.colores = new ArrayList<Color>();
+        this.categoria = null;
     }
 
 }

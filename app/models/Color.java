@@ -15,11 +15,14 @@ public class Color extends Model{
     public Blob foto;
     @Required
     public int cantidad;
+    @ManyToOne
+    public Articulo articulo;
 
-    public Color(String nombre, int cantidad){
+    public Color(String nombre, int cantidad, Blob foto){
 
         this.nombre = nombre;
         this.cantidad = cantidad;
+        this.foto = foto;
     }
 
 

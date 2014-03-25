@@ -67,10 +67,17 @@
       <file leaf-file-name="Articulo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="37" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="29" column="30" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Categoria.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Categoria.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="34" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,21 +85,17 @@
       <file leaf-file-name="Color.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Color.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="33" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="24" column="25" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="540">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Referencia.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Referencia.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Referencia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="29" selection-start="426" selection-end="426" vertical-scroll-proportion="0.4587156" vertical-offset="0" max-vertical-offset="654">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="9" column="72" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="540">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,18 +103,16 @@
       <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="78" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="9" column="78" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="450">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="60" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+            <state line="3" column="110" selection-start="95" selection-end="95" vertical-scroll-proportion="0.07097792" vertical-offset="0" max-vertical-offset="634">
               <folding />
             </state>
           </provider>
@@ -130,17 +131,18 @@
         <option value="$PROJECT_DIR$/app/views/Application/index.html" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/app/controllers/Application.java" />
-        <option value="$PROJECT_DIR$/app/models/Color.java" />
         <option value="$PROJECT_DIR$/app/models/Referencia.java" />
+        <option value="$PROJECT_DIR$/app/models/Color.java" />
+        <option value="$PROJECT_DIR$/app/models/Categoria.java" />
         <option value="$PROJECT_DIR$/app/models/Articulo.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1911" />
-    <option name="y" value="-258" />
-    <option name="width" value="1063" />
-    <option name="height" value="774" />
+    <option name="x" value="1715" />
+    <option name="y" value="-159" />
+    <option name="width" value="1280" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -168,6 +170,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -278,7 +281,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -289,6 +291,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -325,6 +328,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -350,19 +366,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -434,7 +437,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1911" y="-258" width="1063" height="774" extended-state="0" />
+    <frame x="1715" y="-159" width="1280" height="778" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -452,13 +455,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24975514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17851374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -480,19 +483,113 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="65" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="480">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="2" column="0" selection-start="17" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Categoria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="25" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Referencia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="72" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="540">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="8" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="450">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="9" column="78" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="60" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="17" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Categoria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="25" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Referencia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="72" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="78" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="60" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="46" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Referencia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="72" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="78" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="450">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -506,18 +603,35 @@
     <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="19" selection-start="65" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="480">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="8" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="450">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="60" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="19" selection-start="65" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="8" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="450">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -530,51 +644,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/application.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="42" selection-start="2529" selection-end="2529" vertical-scroll-proportion="0.7305195" vertical-offset="765" max-vertical-offset="3345">
+        <state line="81" column="42" selection-start="2529" selection-end="2529" vertical-scroll-proportion="0.7305195" vertical-offset="765" max-vertical-offset="3345" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="78" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Referencia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="72" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="25" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="30" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Categoria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="34" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="60" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+        <state line="3" column="110" selection-start="95" selection-end="95" vertical-scroll-proportion="0.07097792" vertical-offset="0" max-vertical-offset="634">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="78" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="37" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="33" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Referencia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="29" selection-start="426" selection-end="426" vertical-scroll-proportion="0.4587156" vertical-offset="0" max-vertical-offset="654">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

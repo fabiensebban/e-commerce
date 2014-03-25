@@ -1,0 +1,27 @@
+package models;
+
+import java.util.*;
+import java.util.ArrayList;
+import javax.persistence.*;
+import  play.db.jpa.Blob;
+import play.data.validation.Required;
+import play.db.jpa.*;
+
+@Entity
+public class Categoria extends Model {
+
+    public String nombre;
+    @Required
+    public Long IdPadre;
+    public List<Long> IdHijos;
+    @OneToMany(mappedBy="categoria", cascade=CascadeType.ALL)
+    public List<Articulo> articulos;
+
+    public Categoria (String nombre, Long IdPadre){
+
+        this.nombre = nombre;
+        this.IdPadre = IdPadre;
+        this.IdHijos = new ArrayList<Long>();
+        this.articulos = new ArrayList<Articulo>();
+    }
+}
