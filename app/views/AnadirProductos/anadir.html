@@ -1,0 +1,107 @@
+#{extends 'main.html' /}
+#{set title:'Añadir producto' /}
+
+
+<div class="wrapper container">
+    <div class="wrap-inside">
+        <div class="main-content">
+            <div id="woo-ordering">
+            </div><!-- #woo-ordering -->
+            <div id="entry-full">
+                <div id="left">
+                    <div id="head-line">
+                        <h1 class="title">Añade producto</h1>
+
+                        </div><!--  end .meta  -->
+                    </div>
+                    <div class="post-full single">
+                        <div id="post-459" class="post-459 post type-post status-publish format-gallery hentry category-blog instock">
+                            <div id="tags">
+                            </div>
+
+                            <!-- You can start editing here. -->
+
+                            <div id="commentbox" class="nocomments">
+                                <!-- If comments are open, but there are no comments. -->
+
+                                <div id="respond" class="comment-respond">
+                                    <h3 id="reply-title" class="comment-reply-title"><span>Especificaciones del producto</span></h3>
+                                    #{form @AnadirProductos.guardarProducto(), id:"commentform", class:"comment-form", enctype:"multipart/form-data"}
+                                        <p class="contenido-nombre_referencia">
+                                            <label for="nombre_referencia">Nombre referencia<span class="required">*</span></label>
+                                            <input id="nombre_referencia" name="nombre_referencia" value="" size="30" aria-required="true" type="text">
+                                        </p>
+                                        <p class="contenido-dibujo">
+                                            <label for="dibujo">Dibujo<span class="required">*</span></label>
+                                            <input id="dibujo" name="dibujo" value="" size="30" aria-required="true" type="text">
+                                        </p>
+                                        <p class="contenido-composicion">
+                                            <label for="composicion">Composición<span class="required">*</span></label>
+                                            <input id="composicion" name="composicion" value="" size="30" aria-required="true" type="text">
+                                        </p>
+                                        <p class="contenido-largo">
+                                            <label for="largo">Largo</label>
+                                            <input id="largo" name="largo" value="" size="30" type="text">
+                                        </p>
+                                        <p class="contenido-pesoportamano">
+                                            <label for="pesoportamano">Peso (gr/m2)</label>
+                                            <input id="pesoportamano" name="pesoportamano" value="" size="30" type="text">
+                                        </p>
+
+                                        <div id="colores">
+                                            <div id="divColor1">
+                                                <p class="contenido-color1">
+                                                    <label for="color">Color 1</label>
+                                                    <input id="color" name="color" value="" size="30" type="text">
+                                                    <input type="file" name="foto_color">
+                                                </p>
+                                                <p id="contenido-cantidad">
+                                                    <label for="cantidad">Cantidad 1</label>
+                                                    <input id="cantidad" name="cantidad" value="" size="30" type="text">
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <p id="anadir">
+                                             <a name="anadircolor" id="anadircolor" value="Añadir color" type="">+ Añadir color</a>
+                                        </p>
+
+                                        <p id="quitar">
+                                            <a name="quitarcolor" id="quitarcolor" value="Quitar Color" type="">- Quitar color</a>
+                                        </p>
+                                        <input name="submit" id="submit" value="Guardar" type="submit">
+                                    #{/form}
+                                </div><!-- #respond -->
+
+                            </div>
+                        </div>
+                    </div> <!--  end .post  -->
+                </div> <!--  end #right  -->
+        </div> <!--  end #entry-full  -->
+
+        </div> <!--  end .main-content  -->
+    </div> <!-- .wrap-inside -->
+</div>
+<script type='text/javascript'>
+    $(document).ready(function(){
+        var numeroColores = 1;
+            $('#anadircolor').click(function(){
+                numeroColores = numeroColores+1;
+                $('#colores').append('<div id="divColor' + numeroColores + '"><p class="contenido-color' + numeroColores + '"><label for="color' + numeroColores + '">Color ' + numeroColores + '</label><input id="color' + numeroColores + '" name="color' + numeroColores + '" value="" size="30" type="text"><input type="file" name="foto_color' + numeroColores + '"></p><p id="contenido-cantidad' + numeroColores + '"><label for="cantidad' + numeroColores + '">Cantidad ' + numeroColores + '</label><input id="cantidad' + numeroColores + '" name="cantidad' + numeroColores + '" value="" size="30" type="text"></p></div>');
+            });
+            $('#quitarcolor').click(function(){
+                $('#divColor' + numeroColores).remove();
+                numeroColores = numeroColores-1;
+            });
+        });
+</script>
+
+
+
+
+
+
+
+
+
+

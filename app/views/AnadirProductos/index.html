@@ -1,0 +1,59 @@
+#{extends 'main.html' /}
+#{set title:'Logeo' /}
+
+<div class="wrapper container">
+    <div class="wrap-inside">
+        <div class="main-content">
+            <div id="woo-ordering">
+            </div><!-- #woo-ordering -->
+            <div id="entry-full">
+                <div id="left" class="full-width">
+                    <div id="head-line">
+                        <h1 class="title">Mi cuenta</h1>
+                    </div>
+                    <div class="post-full single">
+                        <div class="post-content">
+                            <div class="woocommerce">
+
+
+
+                                <h2>Login</h2>
+                                #{form @AnadirProductos.logeo(), class:"login", enctype:"multipart/form-data"}
+                                    <p class="form-row form-row-first">
+                                        <label for="username">Usuario <span class="required">*</span></label>
+                                        <input class="input-text" name="username" id="username" type="text">
+                                    </p>
+                                    <p class="form-row form-row-last">
+                                        <label for="password">Contraseña <span class="required">*</span></label>
+                                        <input class="input-text" name="password" id="password" type="password">
+                                    </p>
+                                    <div class="clear"></div>
+
+                                    <p class="form-row">
+                                        <input class="button" name="login" value="Entrar" type="submit">
+                                    </p>
+                                 #{/form}
+                            </div>
+
+                        </div>  <!--  end .post-content  -->
+
+                        <!-- You can start editing here. -->
+
+                        <div id="commentbox" class="nocomments">
+                            <!-- If comments are closed. -->
+
+                            <!-- <p class="nocomments">Comments are closed for this page.</p>  -->
+
+
+
+
+
+                        </div>
+
+                    </div> <!--  end .post  -->
+                </div> <!--  end #left  -->
+            </div> <!--  end #entry-full  -->
+
+        </div> <!--  end .main-content  -->
+    </div> <!-- .wrap-inside -->
+</div>

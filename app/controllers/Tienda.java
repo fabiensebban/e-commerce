@@ -15,8 +15,4 @@ public class Tienda extends Controller {
         render();
     }
 
-    public static void anadirProductoLogeo(){
-        render();
-    }
-
 }
