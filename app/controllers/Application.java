@@ -16,7 +16,7 @@ public class Application extends Controller {
 
     public static void addArticulo(int cantidad, Referencia referencia){
 
-        Articulo articulo = new Articulo(cantidad, referencia);
+        Articulo articulo = new Articulo(referencia);
         articulo.save();
 
 

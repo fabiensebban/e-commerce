@@ -1,0 +1,5 @@
+# Test data
+
+Categoria(root):
+    nombre:          Root
+    IdPadre:       1

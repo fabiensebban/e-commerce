@@ -39,6 +39,16 @@
                                             <label for="composicion">Composición<span class="required">*</span></label>
                                             <input id="composicion" name="composicion" value="" size="30" aria-required="true" type="text">
                                         </p>
+                                    <p class="contenido-categoria">
+                                        <label for="categoria">Categoria<span class="required">*</span></label>
+                                        <select id="categoria">
+                                            #{list categorias, as:'categoria'}
+                                                <option value="${categoria.id}">${categoria.nombre}</option>
+                                            #{/list}
+
+                                        </select>
+                                        </datalist>
+                                    </p>
                                         <p class="contenido-largo">
                                             <label for="largo">Largo</label>
                                             <input id="largo" name="largo" value="" size="30" type="text">
@@ -96,6 +106,35 @@
         });
 </script>
 
+<!--
+
+    ***********************************************************
+    Posible implementacion para obtener las categorias via ajax
+    ***********************************************************
+
+<script type="text/javascript" src="/public/javascripts/oXHR.js"></script>
+<script type="text/javascript">
+<!--
+function request(callback) {
+	var xhr = getXMLHttpRequest();
+
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+			callback(xhr.responseText);
+		}
+	};
+
+    var inicioCat = encodeURIComponent(document.getElementById("categoria").value);
+
+	xhr.open("GET", "/anadirproductos/ajaxcategoria?inicioCat=" + inicioCat, true);
+	xhr.send(null);
+}
+
+function readData(oData) {
+	document.getElementsByTagName("datalist").appendChild(oData);
+}
+//
+</script>-->
 
 
 

@@ -12,6 +12,7 @@ public class Color extends Model{
 
     @Required
     public String nombre;
+    @Required
     public Blob foto;
     @Required
     public int cantidad;

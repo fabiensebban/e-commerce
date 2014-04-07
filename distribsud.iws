@@ -67,10 +67,8 @@
       <file leaf-file-name="Articulo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="55" selection-start="514" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="21" column="20" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,7 +76,7 @@
       <file leaf-file-name="Color.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Color.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="25" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="540">
+            <state line="28" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
@@ -87,7 +85,7 @@
       <file leaf-file-name="Referencia.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Referencia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="38" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="540">
+            <state line="9" column="38" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
@@ -102,37 +100,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/AnadirProductos/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="66" selection-start="181" selection-end="181" vertical-scroll-proportion="-0.28" vertical-offset="76" max-vertical-offset="960">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="77" selection-start="2484" selection-end="2484" vertical-scroll-proportion="-9.875" vertical-offset="363" max-vertical-offset="1920">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AnadirProductos.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/AnadirProductos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="66" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+            <state line="22" column="25" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="anadir.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="anadir.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/AnadirProductos/anadir.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="48" selection-start="6037" selection-end="6037" vertical-scroll-proportion="0.7761194" vertical-offset="719" max-vertical-offset="1695">
+            <state line="44" column="80" selection-start="2796" selection-end="2796" vertical-scroll-proportion="-5.1" vertical-offset="405" max-vertical-offset="2280">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Categoria.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/Categoria.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="139" selection-start="900" selection-end="900" vertical-scroll-proportion="0.4397394" vertical-offset="0" max-vertical-offset="921">
               <folding />
             </state>
           </provider>
@@ -150,10 +139,6 @@
       <list>
         <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/app/models/Referencia.java" />
-        <option value="$PROJECT_DIR$/app/models/Color.java" />
-        <option value="$PROJECT_DIR$/app/models/Articulo.java" />
-        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
-        <option value="$PROJECT_DIR$/app/models/Categoria.java" />
         <option value="$PROJECT_DIR$/public/stylesheets/settings.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/captions.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/colorpicker.css" />
@@ -170,21 +155,28 @@
         <option value="$PROJECT_DIR$/public/javascripts/eye.js" />
         <option value="$PROJECT_DIR$/public/javascripts/utils.js" />
         <option value="$PROJECT_DIR$/app/views/Tienda/catalogo.html" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/views/Tienda/anadirProductoLogeo.html" />
         <option value="$PROJECT_DIR$/app/views/ListaProductos/anadirProducto.html" />
         <option value="$PROJECT_DIR$/app/controllers/Tienda.java" />
         <option value="$PROJECT_DIR$/app/views/AnadirProductos/index.html" />
-        <option value="$PROJECT_DIR$/app/controllers/AnadirProductos.java" />
         <option value="$PROJECT_DIR$/app/views/Application/index.html" />
+        <option value="$PROJECT_DIR$/app/models/Color.java" />
+        <option value="$PROJECT_DIR$/app/models/Articulo.java" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/conf/initial-data.yml" />
+        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/app/models/Categoria.java" />
+        <option value="$PROJECT_DIR$/app/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/public/javascripts/oXHR.js" />
+        <option value="$PROJECT_DIR$/app/controllers/AnadirProductos.java" />
         <option value="$PROJECT_DIR$/app/views/AnadirProductos/anadir.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1894" />
+    <option name="x" value="1864" />
     <option name="y" value="-258" />
-    <option name="width" value="1306" />
+    <option name="width" value="1336" />
     <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -260,24 +252,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distribsud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distribsud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -293,6 +267,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distribsud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distribsud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -371,6 +359,10 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -410,11 +402,12 @@
     <property name="options.searchVisible" value="true" />
     <property name="SearchEverywhereHistory" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/AnadirProductos" />
       <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/app/views/AnadirProductos" />
     </key>
   </component>
   <component name="RunManager">
@@ -561,7 +554,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1894" y="-258" width="1306" height="1054" extended-state="0" />
+    <frame x="1864" y="-258" width="1336" height="1054" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -569,6 +562,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -579,11 +573,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21914557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21406491" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -634,56 +627,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="17" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="525">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Categoria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="29" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="25" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Referencia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="72" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="78" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="450">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="60" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="46" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="525">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -720,9 +665,7 @@
     <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="19" selection-start="65" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="480">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -745,9 +688,7 @@
     <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="19" selection-start="65" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="480">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -763,32 +704,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="60" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="25" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="117" selection-start="6133" selection-end="6133" vertical-scroll-proportion="-11.52" vertical-offset="2712" max-vertical-offset="3345" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Referencia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="38" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Categoria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
@@ -873,53 +788,14 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="55" selection-start="514" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Tienda/catalogo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="658" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="22" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Tienda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="8" selection-start="64" selection-end="64" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AnadirProductos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="66" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/AnadirProductos/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="66" selection-start="181" selection-end="181" vertical-scroll-proportion="-0.28" vertical-offset="76" max-vertical-offset="960">
           <folding />
         </state>
       </provider>
@@ -938,16 +814,121 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/AnadirProductos/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="66" selection-start="181" selection-end="181" vertical-scroll-proportion="0.100678734" vertical-offset="1" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Referencia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/dependencies.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="911">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="80" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Tienda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="118" selection-start="168" selection-end="168" vertical-scroll-proportion="0.08029979" vertical-offset="0" max-vertical-offset="934">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/oXHR.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="0.40149894" vertical-offset="0" max-vertical-offset="934">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="77" selection-start="2484" selection-end="2484" vertical-scroll-proportion="-9.875" vertical-offset="363" max-vertical-offset="1920">
+        <state line="35" column="79" selection-start="1970" selection-end="2006" vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="1920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="200" column="117" selection-start="6133" selection-end="6133" vertical-scroll-proportion="-22.64" vertical-offset="2434" max-vertical-offset="3345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="100" selection-start="55" selection-end="55" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Articulo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="20" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AnadirProductos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/AnadirProductos/anadir.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="48" selection-start="6037" selection-end="6037" vertical-scroll-proportion="0.7761194" vertical-offset="719" max-vertical-offset="1695">
+        <state line="44" column="80" selection-start="2796" selection-end="2796" vertical-scroll-proportion="-5.1" vertical-offset="405" max-vertical-offset="2280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Bootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="86" selection-start="976" selection-end="976" vertical-scroll-proportion="0.4496788" vertical-offset="0" max-vertical-offset="934">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Categoria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="139" selection-start="900" selection-end="900" vertical-scroll-proportion="0.4397394" vertical-offset="0" max-vertical-offset="921">
           <folding />
         </state>
       </provider>

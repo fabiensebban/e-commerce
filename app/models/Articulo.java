@@ -10,8 +10,6 @@ import play.db.jpa.*;
 @Entity
 public class Articulo extends Model{
 
-    @Required
-    public int cantidad;
     public String notas;
     @OneToOne
     public Referencia referencia;
@@ -21,9 +19,8 @@ public class Articulo extends Model{
     public Categoria categoria;
 
 
-    public Articulo(int cantidad, Referencia referencia){
+    public Articulo(Referencia referencia){
 
-        this.cantidad = cantidad;
         this.notas = "";
         this.referencia = referencia;
         this.colores = new ArrayList<Color>();

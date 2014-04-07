@@ -27,4 +27,13 @@ public class Categoria extends Model {
         this.IdHijos = new ArrayList<Long>();
         this.articulos = new ArrayList<Articulo>();
     }
+
+    public Categoria anadirCategoria (String nombre) {
+
+        Categoria categoriaNueva = new Categoria(nombre, this.id).save();
+        this.IdHijos.add(categoriaNueva.id);
+        this.save();
+        return this;
+
+    }
 }
