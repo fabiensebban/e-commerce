@@ -28,20 +28,21 @@
                                     <h3 id="reply-title" class="comment-reply-title"><span>Especificaciones del producto</span></h3>
                                     #{form @AnadirProductos.guardarProducto(), id:"commentform", class:"comment-form", enctype:"multipart/form-data"}
                                         <p class="contenido-nombre_referencia">
-                                            <label for="nombre_referencia">Nombre referencia<span class="required">*</span></label>
-                                            <input id="nombre_referencia" name="nombre_referencia" value="" size="30" aria-required="true" type="text">
+                                            <label for="nombre_referencia">Nombre referencia<span class="required">*</span><span style="color:red"> #{error 'nombre_referencia'/}</span> </label>
+                                            <input id="nombre_referencia" name="nombre_referencia" value="${params.nombre_referencia}" size="30" aria-required="true" type="text">
                                         </p>
                                         <p class="contenido-dibujo">
-                                            <label for="dibujo">Dibujo<span class="required">*</span></label>
-                                            <input id="dibujo" name="dibujo" value="" size="30" aria-required="true" type="text">
+                                            <label for="dibujo">Dibujo<span class="required">*</span><span style="color:red"> #{error 'dibujo'/}</span> </label>
+                                            <input id="dibujo" name="dibujo" value="${params.dibujo}" size="30" aria-required="true" type="text">
                                         </p>
                                         <p class="contenido-composicion">
-                                            <label for="composicion">Composición<span class="required">*</span></label>
-                                            <input id="composicion" name="composicion" value="" size="30" aria-required="true" type="text">
+                                            <label for="composicion">Composición<span class="required">*</span><span style="color:red"> #{error 'composicion'/}</span> </label>
+                                            <input id="composicion" name="composicion" value="${params.composicion}" size="30" aria-required="true" type="text">
                                         </p>
                                     <p class="contenido-categoria">
-                                        <label for="categoria">Categoria<span class="required">*</span></label>
-                                        <select id="categoria">
+                                        <label for="idCategoria">Categoria (en metros)<span class="required">*</span><span style="color:red"> #{error 'idCategoria'/}</span></label>
+                                        <select id="idCategoria" name="idCategoria">
+                                                <option value=""></option>
                                             #{list categorias, as:'categoria'}
                                                 <option value="${categoria.id}">${categoria.nombre}</option>
                                             #{/list}
@@ -58,19 +59,34 @@
                                             <input id="pesoportamano" name="pesoportamano" value="" size="30" type="text">
                                         </p>
 
+                                        <p class="contenido-notas">
+                                            <label for="notas">Notas</label>
+                                            <input id="notas" name="notas" value="" size="30" type="text">
+                                        </p>
+
                                         <div id="colores">
                                             <div id="divColor1">
                                                 <p class="contenido-color1">
-                                                    <label for="color">Color 1</label>
-                                                    <input id="color" name="color" value="" size="30" type="text">
-                                                    <input type="file" name="foto_color">
+                                                    <label for="color1">Color 1 <span class="required">*</span><span style="color:red"> #{error 'color1'/}</span></label>
+                                                    <input id="color1" name="color1" value="" size="30" type="text">
+                                                    <input type="file" name="foto_color1">
                                                 </p>
-                                                <p id="contenido-cantidad">
-                                                    <label for="cantidad">Cantidad 1</label>
-                                                    <input id="cantidad" name="cantidad" value="" size="30" type="text">
+                                                <p id="contenido-cantidad1">
+                                                    <label for="cantidad1">Cantidad 1 <span class="required">*</span><span style="color:red"> #{error 'cantidad1'/}</span></label>
+                                                    <input id="cantidad1" name="cantidad1" value="" size="30" type="text">
                                                 </p>
                                             </div>
                                         </div>
+
+                                        #{if errores}
+
+                                            <p id="errorColor">
+                                            #{list items:errores, as:'error'}
+                                                <span style="color:red">${error}</span>
+                                            #{/list}
+                                            </p>
+
+                                         #{/if}
 
                                         <p id="anadir">
                                              <a name="anadircolor" id="anadircolor" value="Añadir color" type="">+ Añadir color</a>
@@ -79,6 +95,8 @@
                                         <p id="quitar">
                                             <a name="quitarcolor" id="quitarcolor" value="Quitar Color" type="">- Quitar color</a>
                                         </p>
+
+                                        <input name="numeroColores" id="numeroColores" type="hidden" value="1">
                                         <input name="submit" id="submit" value="Guardar" type="submit">
                                     #{/form}
                                 </div><!-- #respond -->
@@ -98,10 +116,12 @@
             $('#anadircolor').click(function(){
                 numeroColores = numeroColores+1;
                 $('#colores').append('<div id="divColor' + numeroColores + '"><p class="contenido-color' + numeroColores + '"><label for="color' + numeroColores + '">Color ' + numeroColores + '</label><input id="color' + numeroColores + '" name="color' + numeroColores + '" value="" size="30" type="text"><input type="file" name="foto_color' + numeroColores + '"></p><p id="contenido-cantidad' + numeroColores + '"><label for="cantidad' + numeroColores + '">Cantidad ' + numeroColores + '</label><input id="cantidad' + numeroColores + '" name="cantidad' + numeroColores + '" value="" size="30" type="text"></p></div>');
+                $('#numeroColores').val('' + numeroColores);
             });
             $('#quitarcolor').click(function(){
                 $('#divColor' + numeroColores).remove();
                 numeroColores = numeroColores-1;
+                $('#numeroColores').val('' + numeroColores);
             });
         });
 </script>
