@@ -1,6 +1,11 @@
 
-
 #{list items:colores, as:'color'}
    <strong>Estoy en el list</strong>
     <img src="@{fotoColor(color.id)}">
+#{list items:articulos, as:'articulo'}
+    #{list items:articulo.colores, as: 'color'}
+       <strong>${color.nombre}</strong>
+       <strong>${color.cantidad}</strong>
+       <img src="@{fotoColor(color.id)}"><br>
+    #{/list}
 #{/list}

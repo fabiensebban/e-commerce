@@ -17,7 +17,14 @@ public class AnadirProductos extends Controller {
 
 
     public static void index() {
+
+        if(session.get("user") == null){
         render();
+        }
+
+        else {
+            AnadirProductos.anadir();
+        }
     }
 
     public static void anadir() {
@@ -27,7 +34,7 @@ public class AnadirProductos extends Controller {
         render(categorias, params);
     }
 
-    public static void guardarProducto(
+     public static void guardarProducto(
             @Required String nombre_referencia,
             @Required String dibujo,
             @Required String composicion,
@@ -49,8 +56,6 @@ public class AnadirProductos extends Controller {
             Boolean continu = true;
             List<String> errores = new ArrayList<String>();
 
-            System.out.println("Estoy en guardarProducto");
-
             /*
 
             Esta funcion no es útil de momento debido a que hay una variable (input de tipo hidden) que nos da el número de
@@ -66,8 +71,6 @@ public class AnadirProductos extends Controller {
                     else{
                         continu = false;
                     }
-                    System.out.println("numero de colores: " + numeroColores);
-
                 }
                 catch (NullPointerException e){
                     continu = false;
@@ -100,11 +103,6 @@ public class AnadirProductos extends Controller {
                     errorColor = errorColor + "Falta rellenar los datos de la cantidad " + i;
                     errorEnElColor = true;
                 }
-
-                System.out.println("valor de errorColor: " + errorColor);
-                System.out.println("valor de params.get(\"cantidad1\"): " + params.get("cantidad1"));
-                System.out.println("valor de Integer.parseInt(numeroColores): " + Integer.parseInt(numeroColores));
-
             */
 
                 validation.required(params.get("color"+i));
@@ -116,21 +114,13 @@ public class AnadirProductos extends Controller {
                 catch (NumberFormatException e){
                     errores.add("El formato de cantidad"+ i +" no es el correcto");
                 }
-
-
-                System.out.println("valor de params.get(\"color i\"): " + params.get("color" + i));
-                System.out.println("valor de params.get(\"cantidad i\"): " + params.get("cantidad" + i));
-                System.out.println("valor de params.get(\"foto_color i\"): " + params.get("foto_color" + i));
-                System.out.println("valor i: " + i);
                 i++;
 
             }
 
             //Accion a realizar en caso de error
             if(validation.hasErrors() || !errores.isEmpty()){
-                System.out.println("Ha habido errores");
                 for(Error error : validation.errors()) {
-                    System.out.println(error.getKey() + " " + error.message());
                 }
                 List categorias = Categoria.findAll();
                 render("@anadir", categorias, errores);
@@ -138,8 +128,6 @@ public class AnadirProductos extends Controller {
 
             else {
             //Everything OK, empezamos a guardar los datos
-
-                System.out.println("Todo OK, empiezo a guardar");
 
                 //Creamos la referencia y la guardamos
                 Referencia referencia = new Referencia(nombre_referencia, dibujo, composicion);
@@ -153,37 +141,37 @@ public class AnadirProductos extends Controller {
 
                 referencia.save();
 
-                //Creamos la lista de colores
-
-                i=1;
-                System.out.println("valor de Integer.parseInt(numeroColores): " + Integer.parseInt(numeroColores));
-                List<Color> colores = new ArrayList<Color>();
-
-                while (i<=Integer.parseInt(numeroColores)){
-
-                    System.out.println("Dentro del while");
-
-                    Blob foto_color = params.get("foto_color"+i, Blob.class);
-                    System.out.println("foto con Blob: " + params.get("foto_color"+i, Blob.class));
-
-                    Color color = new Color(params.get("color"+i),Integer.parseInt(params.get("cantidad"+i)),foto_color).save();
-
-                    colores.add(color);
-                }
+                //Recuperamos el objeto categoria
+                Categoria categoria = Categoria.findById(Long.parseLong(params.get("idCategoria")));
 
                 //Creamos el articulo
 
                 Articulo articulo = new Articulo(referencia);
 
                 //Asociamos los colores, las notas y la catgoria al articulo
-                articulo.colores = colores;
+
                 articulo.notas = params.get("notas");
-
-                Categoria categoria = Categoria.findById(params.get("idCategoria"));
-
                 articulo.categoria = categoria;
                 articulo.save();
+                //Creamos la lista de colores
 
+                i=1;
+                List<Color> colores = new ArrayList<Color>();
+
+                while (i<=Integer.parseInt(numeroColores)){
+
+                    Blob foto_color = params.get("foto_color"+i, Blob.class);
+
+                    Color color = new Color(params.get("color"+i),Integer.parseInt(params.get("cantidad"+i)),foto_color).save();
+                    color.articulo = articulo;
+                    colores.add(color);
+                    color.save();
+
+                    i++;
+                }
+
+                articulo.colores = colores;
+                articulo.save();
                 Application.index();
             }
         }
@@ -194,9 +182,6 @@ public class AnadirProductos extends Controller {
         if (session.get("user") != null) {
             AnadirProductos.anadir();
         }
-
-        System.out.println("username: " + username);
-        System.out.println("password: " + password);
         if (username.equals("distribsud") && password.equals("rony")) {
             session.put("user", username);
             AnadirProductos.anadir();
@@ -212,6 +197,11 @@ public class AnadirProductos extends Controller {
 
     public static void fotoColor(long id) {
         System.out.println("he pasado por aqui");
+        List<Articulo> articulos = Articulo.findAll();
+        render(articulos);
+    }
+
+    public static void fotoColor(long id) {
         final Color color = Color.findById(id);
         notFoundIfNull(color);
         response.setContentTypeIfNotSet(color.foto.type());
@@ -239,9 +229,6 @@ public class AnadirProductos extends Controller {
             } catch (IndexOutOfBoundsException e) {
                 continu = false;
             }
-
-            System.out.println("valor de i: " + i);
-
         }
 
 
