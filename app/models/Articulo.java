@@ -17,6 +17,7 @@ public class Articulo extends Model{
     public List<Color> colores;
     @ManyToOne
     public Categoria categoria;
+    public Date fecha_creacion;
 
 
     public Articulo(Referencia referencia){
@@ -25,6 +26,7 @@ public class Articulo extends Model{
         this.referencia = referencia;
         this.colores = new ArrayList<Color>();
         this.categoria = null;
+        this.fecha_creacion = new Date();
     }
 
 }

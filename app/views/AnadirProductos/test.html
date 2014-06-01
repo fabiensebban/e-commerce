@@ -1,11 +1,79 @@
 
 #{list items:colores, as:'color'}
-   <strong>Estoy en el list</strong>
-    <img src="@{fotoColor(color.id)}">
-#{list items:articulos, as:'articulo'}
-    #{list items:articulo.colores, as: 'color'}
-       <strong>${color.nombre}</strong>
-       <strong>${color.cantidad}</strong>
-       <img src="@{fotoColor(color.id)}"><br>
+       <strong>Estoy en el list</strong>
+        <img src="@{fotoColor(color.id)}">
+    #{list items:articulos, as:'articulo'}
+        #{list items:articulo.colores, as: 'color'}
+           <strong>${color.nombre}</strong>
+           <strong>${color.cantidad}</strong>
+           <img src="@{fotoColor(color.id)}"><br>
+        #{/list}
     #{/list}
 #{/list}
+
+
+<!--
+<div class="fullwidthbanner-container"><span class="Apple-tab-span"></span>
+    <div class="fullwidthbanner">
+        <ul>
+            <li data-transition="boxslide" data-slotamount="7" data-link="http://www.google.de">
+                <img alt="" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/uploads/2013/06/slide9.jpg" class="avatar avatar-512 photo">
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<!-- jQuery REVOLUTION Slider  -->
+
+<!--
+
+<script type="text/javascript" src="@{'/public/javascripts/jquery.themepunch.plugins.min.js'}"></script>
+<script type="text/javascript" src="@{'/public/javascripts/jquery.themepunch.revolution.min.js'}"></script>
+
+<!-- REVOLUTION BANNER CSS SETTINGS -->
+
+<!--
+<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/settings.css'}" media="screen" />
+-->
+<!--
+
+
+<script type="text/javascript">
+    var tpj=jQuery;               // MAKE JQUERY PLUGIN CONFLICTFREE
+    tpj.noConflict();
+
+    tpj(document).ready(function() {
+
+        if (tpj.fn.cssOriginal!=undefined)   // CHECK IF fn.css already extended
+            tpj.fn.css = tpj.fn.cssOriginal;
+
+        tpj('.banner').revolution(
+                {
+                    delay:9000,
+                    startheight:490,
+                    startwidth:890,
+
+                    hideThumbs:200,
+
+                    thumbWidth:100,
+                    thumbHeight:50,
+                    thumbAmount:5,
+
+                    navigationType:"both",
+                    navigationArrows:"nexttobullets",
+                    navigationStyle:"round",
+                    touchenabled:"on",
+                    onHoverStop:"on",
+
+                    navOffsetHorizontal:0,
+                    navOffsetVertical:20,
+
+                    shadow:1,
+                    fullWidth:"off"
+
+                });
+    });
+</script>
+
+-->

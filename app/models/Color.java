@@ -17,6 +17,7 @@ public class Color extends Model{
     @Required
     public int cantidad;
     @ManyToOne
+    @Required
     public Articulo articulo;
 
     public Color(String nombre, int cantidad, Blob foto){

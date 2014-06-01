@@ -269,27 +269,27 @@
             <li class='product'>
                 <div class='product-thumb-wrap'>
                     <div class='product-thumb-wrap'>
-                        <div class="product-images-wrap">
-                            <ul class="product-images">
-                                <li >
+                <div class="product-images-wrap">
+                    <ul class="product-images">
+                        <li >
+                            <div class="archive-product-image">
+                                #{a @Tienda.producto(articulo.id)}
+                                    <img width="420" height="540" src="@{fotoColor(articulo.colores.get(0).id)}" class="attachment-shop_catalog" />
+                                </div>
+                                #{/a}
+                        </li>
+                        #{if articulo.colores.get(1)}
+                            <li class="product-overlay">
                                 <div class="archive-product-image">
                                     #{a @Tienda.producto(articulo.id)}
-                                        <img width="420" height="540" src="@{fotoColor(articulo.colores.get(0).id)}" class="attachment-shop_catalog" />
-                                    </div>
+                                        <img width="420" height="540" src="@{fotoColor(articulo.colores.get(1).id)}" class="attachment-shop_catalog" />
                                     #{/a}
-                                </li>
-                                #{if articulo.colores.get(1)}
-                                    <li class="product-overlay">
-                                        <div class="archive-product-image">
-                                            #{a @Tienda.producto(articulo.id)}
-                                                <img width="420" height="540" src="@{fotoColor(articulo.colores.get(1).id)}" class="attachment-shop_catalog" />
-                                            #{/a}
-                                        </div>
-                                    </li>
-                                #{/if}
+                                </div>
+                            </li>
+                        #{/if}
 
-                            </ul><!-- .product-images -->
-                        </div><!-- .product-images-wrap -->
+                    </ul><!-- .product-images -->
+                </div><!-- .product-images-wrap -->
                     </div>
                 </div>
 
@@ -297,13 +297,13 @@
                     <h3>${articulo.referencia.nombre}</h3>
 
                     <!--  Display Product Price -->
-                    <!--
-                          <span class="price">
-                            <span class="price">
-                                <span class="amount">&#36;49.00</span>
-                            </span>
-                          </span>
-                    -->
+                <!--
+		              <span class="price">
+	                    <span class="price">
+                            <span class="amount">&#36;49.00</span>
+                        </span>
+		              </span>
+		        -->
                 #{/a}
             </li>
             <!--  .product  -->

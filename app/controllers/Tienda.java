@@ -15,4 +15,10 @@ public class Tienda extends Controller {
         render();
     }
 
+    public static void producto(Long idProducto) {
+        List<Articulo> novedades = new ArrayList<Articulo>();
+        novedades = Articulo.find("order by fecha_creacion desc").fetch(4);
+        render(novedades);
+    }
 }
+

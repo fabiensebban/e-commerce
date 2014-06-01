@@ -191,14 +191,27 @@ public class AnadirProductos extends Controller {
     }
 
     public static void test(){
+        List<Articulo> novedades = new ArrayList<Articulo>();
+        novedades = Articulo.find("order by fecha_creacion desc").fetch();
+        System.out.println("printamos");
+
+        int i=0;
+        boolean continu = true;
+
+        while(continu){
+            try {
+                System.out.println("valor de notas: " + novedades.get(i).notas);
+                i++;
+            }
+            catch (IndexOutOfBoundsException e){
+                continu = false;
+            }
+
+        }
+
+        System.out.println("Novedades: " + novedades);
         List<Color> colores = Color.findAll();
         render(colores);
-    }
-
-    public static void fotoColor(long id) {
-        System.out.println("he pasado por aqui");
-        List<Articulo> articulos = Articulo.findAll();
-        render(articulos);
     }
 
     public static void fotoColor(long id) {
