@@ -12,9 +12,7 @@ import models.*;
 public class Application extends Controller {
 
     public static void index() {
-        List<Articulo> novedades = Articulo.find("order by fecha_creacion asc").fetch();
-
-        System.out.println("Novedad 1: " + novedades.get(0).referencia.nombre);
+        List<Articulo> novedades = Articulo.find("order by fecha_creacion asc").fetch(11);
         render(novedades);
     }
     public static void testIndex() {

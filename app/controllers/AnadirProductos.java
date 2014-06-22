@@ -30,8 +30,27 @@ public class AnadirProductos extends Controller {
     public static void anadir() {
         if (session.get("user") == null) AnadirProductos.index();
 
-        List categorias = Categoria.findAll();
-        render(categorias, params);
+        List<Categoria> categorias = new ArrayList<Categoria>();
+        List<Categoria> renderedCategorias = new ArrayList<Categoria>();
+
+        categorias = Categoria.findAll();
+        int i = 0;
+
+        while(i < categorias.size()){
+
+            try{
+                categorias.get(i).IdHijos.get(0);
+                System.out.println(""+categorias.get(i).IdHijos.get(0));
+            }
+            catch(IndexOutOfBoundsException e){
+                renderedCategorias.add(categorias.get(i));
+                System.out.println("paso por aqui");
+            }
+            System.out.println("valor de i: "+i);
+
+            i++;
+        }
+        render(renderedCategorias, params);
     }
 
      public static void guardarProducto(
@@ -193,7 +212,6 @@ public class AnadirProductos extends Controller {
     public static void test(){
         List<Articulo> novedades = new ArrayList<Articulo>();
         novedades = Articulo.find("order by fecha_creacion desc").fetch();
-        System.out.println("printamos");
 
         int i=0;
         boolean continu = true;

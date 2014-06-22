@@ -40,10 +40,10 @@
                                             <input id="composicion" name="composicion" value="${params.composicion}" size="30" aria-required="true" type="text">
                                         </p>
                                     <p class="contenido-categoria">
-                                        <label for="idCategoria">Categoria (en metros)<span class="required">*</span><span style="color:red"> #{error 'idCategoria'/}</span></label>
+                                        <label for="idCategoria">Categoria<span class="required">*</span><span style="color:red"> #{error 'idCategoria'/}</span></label>
                                         <select id="idCategoria" name="idCategoria">
                                                 <option value=""></option>
-                                            #{list categorias, as:'categoria'}
+                                            #{list renderedCategorias, as:'categoria'}
                                                 <option value="${categoria.id}">${categoria.nombre}</option>
                                             #{/list}
 
