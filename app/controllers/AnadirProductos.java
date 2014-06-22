@@ -53,7 +53,35 @@ public class AnadirProductos extends Controller {
         render(renderedCategorias, params);
     }
 
-     public static void guardarProducto(
+    public static void crearCategoria(){
+
+        if (session.get("user") == null) AnadirProductos.index();
+
+        List<Categoria> categorias = new ArrayList<Categoria>();
+        categorias = Categoria.find("SELECT c FROM Categoria c where c.IdPadre = 1 OR c.IdPadre IS NULL").fetch();
+        render(categorias);
+    }
+
+    public static void guardarCategoria(Long idCategoria, String nombre_categoria){
+
+        if (session.get("user") == null) AnadirProductos.index();
+
+        validation.required(idCategoria);
+        validation.minSize(idCategoria, 1);
+        validation.required(nombre_categoria);
+
+        if(validation.hasErrors()){
+            List<Categoria> categorias = new ArrayList<Categoria>();
+            categorias = Categoria.find("SELECT c FROM Categoria c where c.IdPadre = 1 OR c.IdPadre IS NULL").fetch();
+            render("@crearCategoria", categorias);
+        }
+
+        Categoria categoria = Categoria.findById(idCategoria);
+        categoria.anadirCategoria(nombre_categoria);
+        AnadirProductos.crearCategoria();
+
+    }
+    public static void guardarProducto(
             @Required String nombre_referencia,
             @Required String dibujo,
             @Required String composicion,

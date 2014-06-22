@@ -1,0 +1,57 @@
+#{extends 'main.html' /}
+#{set title:'Crear categoria' /}
+
+
+<div class="wrapper container">
+    <div class="wrap-inside">
+        <div class="main-content">
+            <div id="woo-ordering">
+            </div><!-- #woo-ordering -->
+            <div id="entry-full">
+                <div id="left">
+                    <div id="head-line">
+                        <h1 class="title">Crear categoria</h1>
+
+                    </div><!--  end .meta  -->
+                </div>
+                <div class="post-full single">
+                    <div id="post-459" class="post-459 post type-post status-publish format-gallery hentry category-blog instock">
+                        <div id="tags">
+                        </div>
+
+                        <!-- You can start editing here. -->
+
+                        <div id="commentbox" class="nocomments">
+                            <!-- If comments are open, but there are no comments. -->
+
+                            <div id="respond" class="comment-respond">
+                                <h3 id="reply-title" class="comment-reply-title"><span>Especificaciones de la categoria</span></h3>
+                            #{form @AnadirProductos.guardarCategoria(), id:"commentform", class:"comment-form", enctype:"multipart/form-data"}
+                                <p class="contenido-nombre_categoria">
+                                    <label for="nombre_categoria">Nombre de la categoria<span class="required">*</span><span style="color:red"> #{error 'nombre_categoria'/}</span> </label>
+                                    <input id="nombre_categoria" name="nombre_categoria" value="${params.nombre_categoria}" size="30" aria-required="true" type="text">
+                                </p>
+                                <p class="contenido-categoria">
+                                    <label for="idCategoria">Categoria contenedora<span class="required">*</span><span style="color:red"> #{error 'idCategoria'/}</span></label>
+                                    <select id="idCategoria" name="idCategoria">
+                                        <option value=""></option>
+                                        #{list categorias, as:'categoria'}
+                                            <option value="${categoria.id}">${categoria.nombre}</option>
+                                        #{/list}
+
+                                    </select>
+                                    </datalist>
+                                </p>
+                                <input name="submit" id="submit" value="Guardar" type="submit">
+                            #{/form}
+                            </div><!-- #respond -->
+
+                        </div>
+                    </div>
+                </div> <!--  end .post  -->
+            </div> <!--  end #right  -->
+        </div> <!--  end #entry-full  -->
+
+    </div> <!--  end .main-content  -->
+</div> <!-- .wrap-inside -->
+</div>
