@@ -131,13 +131,9 @@
                                 class="sf-with-ul"
                                 href="@{Tienda.catalogo()}">Productos</a>
                         </li>
-                        <li id="menu-item-668"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-668"><a
-                                class="sf-with-ul" href="http://demo.ufothemes.com/shopster/portfolio-three-column/">Establecimientos</a>
-                        </li>
                         <li id="menu-item-573"
-                            class="megamenu menu-item menu-item-type-custom menu-item-object-custom menu-item-573"><a
-                                class="sf-with-ul" href="#">Contacto</a>
+                            class="megamenu menu-item menu-item-type-custom menu-item-object-custom menu-item-573">
+                            <a class="sf-with-ul" href="@{Application.contacto()}">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -201,7 +197,7 @@
                 </li>
 
 
-                #{if articulo.colores.get(1)}
+                #{if articulo.colores.get(1).foto.exists()}
 
                 <li class="product-overlay">
                     <div class="archive-product-image">
@@ -294,15 +290,6 @@
 <!-- .wrap-inside -->
 </div>
 <!-- .wrapper -->
-<div id="quote">
-    <span class="top-border"></span>
-
-    <p class="quote">FREE SHIPPING ON ALL ORDERS OVER $199*</p>
-
-    <p class="quote-second">*free international shipping not included</p>
-    <span class="bottom-border"></span>
-</div>
-<!--  #quote  -->
 
 <script type="text/javascript">
     jQuery(document).ready(function () {

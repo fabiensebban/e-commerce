@@ -40,14 +40,12 @@ public class AnadirProductos extends Controller {
 
             try{
                 categorias.get(i).IdHijos.get(0);
-                System.out.println(""+categorias.get(i).IdHijos.get(0));
             }
             catch(IndexOutOfBoundsException e){
+                Categoria categoriaPadre = Categoria.findById(categorias.get(i).IdPadre);
+                categorias.get(i).nombre = categoriaPadre.nombre + " - " + categorias.get(i).nombre;
                 renderedCategorias.add(categorias.get(i));
-                System.out.println("paso por aqui");
             }
-            System.out.println("valor de i: "+i);
-
             i++;
         }
         render(renderedCategorias, params);
@@ -154,7 +152,7 @@ public class AnadirProductos extends Controller {
 
                 validation.required(params.get("color"+i));
                 validation.required(params.get("cantidad"+i));
-                validation.required(params.get("foto_color" + i));
+                validation.required(params.get("foto_color1"));
 
                 //Testeamos el formato de la cantidad
                 try{Integer.parseInt(params.get("cantidad"+i));}
@@ -207,9 +205,13 @@ public class AnadirProductos extends Controller {
 
                 while (i<=Integer.parseInt(numeroColores)){
 
-                    Blob foto_color = params.get("foto_color"+i, Blob.class);
+                    Color color = new Color(params.get("color"+i),Integer.parseInt(params.get("cantidad"+i))).save();
 
-                    Color color = new Color(params.get("color"+i),Integer.parseInt(params.get("cantidad"+i)),foto_color).save();
+                    if(params.get("foto_color"+i, Blob.class) != null) {
+                        Blob foto_color = params.get("foto_color" + i, Blob.class);
+                        color.foto = foto_color;
+                    }
+
                     color.articulo = articulo;
                     colores.add(color);
                     color.save();
@@ -229,7 +231,7 @@ public class AnadirProductos extends Controller {
         if (session.get("user") != null) {
             AnadirProductos.anadir();
         }
-        if (username.equals("distribsud") && password.equals("rony")) {
+        if (username.equals("distribsud") && password.equals("19191919")) {
             session.put("user", username);
             AnadirProductos.anadir();
         } else {
@@ -246,7 +248,6 @@ public class AnadirProductos extends Controller {
 
         while(continu){
             try {
-                System.out.println("valor de notas: " + novedades.get(i).notas);
                 i++;
             }
             catch (IndexOutOfBoundsException e){
@@ -254,8 +255,6 @@ public class AnadirProductos extends Controller {
             }
 
         }
-
-        System.out.println("Novedades: " + novedades);
         List<Color> colores = Color.findAll();
         render(colores);
     }

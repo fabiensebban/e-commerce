@@ -96,13 +96,9 @@
                                 class="sf-with-ul"
                                 href="@{Tienda.catalogo()}">Productos</a>
                         </li>
-                        <li id="menu-item-668"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-668"><a
-                                class="sf-with-ul" href="http://demo.ufothemes.com/shopster/portfolio-three-column/">Establecimientos</a>
-                        </li>
                         <li id="menu-item-573"
-                            class="megamenu menu-item menu-item-type-custom menu-item-object-custom menu-item-573"><a
-                                class="sf-with-ul" href="#">Contacto</a>
+                            class="megamenu menu-item menu-item-type-custom menu-item-object-custom menu-item-573">
+                            <a class="sf-with-ul" href="@{Application.contacto()}">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -230,13 +226,30 @@
             </div><!-- #woo-ordering --><div class="main home-no-page">
 
             <section id="home-widgets">
-                <div id="text-2" class="home-widget widget_text"><div class="widget-content"><h2 class="widgettitle">Retina Ready</h2>
-                    <div class="textwidget">Every detail looks crisp and sharp on all retina devices. This theme includes retina ready icons and high resolution images.</div>
-                </div> <!-- .widget-content --></div> <!-- .home-widget --><div id="text-3" class="home-widget widget_text"><div class="widget-content"><h2 class="widgettitle">Responsive Design</h2>
-                <div class="textwidget">The design will automatically scale to different resolutions. Your theme will look great on both desktop and mobile devices alike.</div>
-            </div> <!-- .widget-content --></div> <!-- .home-widget --><div id="text-4" class="home-widget widget_text"><div class="widget-content"><h2 class="widgettitle">WooCommerce Ready</h2>
-                <div class="textwidget">Turn your site into a full featured online store. Sell anything to anyone, be it a tangible product or a digital download.</div>
-            </div> <!-- .widget-content --></div> <!-- .home-widget -->       </section> <!--  end #home-widgets  -->
+                <div id="text-2" class="home-widget widget_text">
+                    <div class="widget-content">
+                        <h2 class="widgettitle">Mataró</h2>
+                    <div class="textwidget">Foneria, 7 - 08304 Mataró - Barcelona<br> T. (+34) 93 796 35 53<br> F. (+34) 93 796 00 42<br> Ronny (+34) 608 52 42 52</div>
+                </div>
+                    <!-- .widget-content -->
+                </div> <!-- .home-widget -->
+                <div id="text-3" class="home-widget widget_text">
+                    <div class="widget-content">
+                        <h2 class="widgettitle"></h2>
+                <div class="textwidget"></div>
+            </div>
+                    <!-- .widget-content -->
+                </div>
+                <!-- .home-widget -->
+                <div id="text-4" class="home-widget widget_text">
+                    <div class="widget-content">
+                        <h2 class="widgettitle">Montigalá</h2>
+                <div class="textwidget">Alemania, 12 <br> 08917 Badalona - Barcelona <br> Olga (+34) 625 615 992</div>
+            </div>
+                    <!-- .widget-content -->
+                </div>
+                <!-- .home-widget -->
+            </section> <!--  end #home-widgets  -->
 
         </div> <!-- .main -->
         </div> <!-- .main-content -->
@@ -272,13 +285,13 @@
                         <div class="product-images-wrap">
                             <ul class="product-images">
                                 <li >
-                                <div class="archive-product-image">
-                                    #{a @Tienda.producto(articulo.id)}
-                                        <img width="420" height="540" src="@{fotoColor(articulo.colores.get(0).id)}" class="attachment-shop_catalog" />
+                                    <div class="archive-product-image">
+                                        #{a @Tienda.producto(articulo.id)}
+                                            <img width="420" height="540" src="@{fotoColor(articulo.colores.get(0).id)}" class="attachment-shop_catalog" />
                                     </div>
                                     #{/a}
                                 </li>
-                                #{if articulo.colores.get(1)}
+                                #{if articulo.colores.get(1).foto.exists()}
                                     <li class="product-overlay">
                                         <div class="archive-product-image">
                                             #{a @Tienda.producto(articulo.id)}
@@ -313,269 +326,6 @@
 </section>
 <!-- home-products novedades-products related -->
 
-<section class="home-products recent-products related">
-
-<h2 class="widgettitle">Los mas vendidos</h2>
-<div class="flexslider">
-<ul class="products slides">
-<li class='product'>			<span class="onsale">Sale!</span>              <div class='product-thumb-wrap'><div class='product-thumb-wrap'>
-    <div class="product-images-wrap">
-        <ul class="product-images">
-            <li >
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/ripped-denim/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/7215050400_1_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="7215050400_1_1_1" />									</a>			            		</div>
-            </li>
-            <li class="product-overlay">
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/ripped-denim/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/7215050400_2_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="7215050400_2_1_1" />									</a>			            		</div>
-            </li>
-
-        </ul><!-- .product-images -->
-    </div><!-- .product-images-wrap -->
-    <a href="http://demo.ufothemes.com/shopster/product/ripped-denim/" rel="nofollow" data-product_id="146" data-product_sku="2123" class="button add_to_cart_button product_type_variable">Select options</a>	</div></div>
-    <a href="http://demo.ufothemes.com/shopster/product/ripped-denim/" class="home-product-title"><h3>Ripped Denim</h3>
-
-        <div class="star-rating" title="Rated 4.80 out of 5"><span style="width:96%"><strong class="rating">4.80</strong> out of 5</span></div>	              <!--  Display Product Price -->
-	              <span class="price">
-
-	<span class="price"><del><span class="amount">&#36;99.00</span></del> <ins><span class="amount">&#36;49.00</span></ins></span>
-	              </span>
-    </a>
-</li> <!--  .product  -->
-
-<li class='product'><div class='product-thumb-wrap'><div class='product-thumb-wrap'>
-    <div class="product-images-wrap">
-        <ul class="product-images">
-            <li >
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/medium-blue-skinny-jeans/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/4406151406_1_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="4406151406_1_1_1" />									</a>			            		</div>
-            </li>
-            <li class="product-overlay">
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/medium-blue-skinny-jeans/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/4406151406_2_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="4406151406_2_1_1" />									</a>			            		</div>
-            </li>
-
-        </ul><!-- .product-images -->
-    </div><!-- .product-images-wrap -->
-    <a href="/shopster/?add-to-cart=142" rel="nofollow" data-product_id="142" data-product_sku="6512" class="button add_to_cart_button product_type_simple">Add to cart</a>	</div></div>
-    <a href="http://demo.ufothemes.com/shopster/product/medium-blue-skinny-jeans/" class="home-product-title"><h3>Medium Blue Skinny Jeans</h3>
-
-        <div class="star-rating" title="Rated 4.40 out of 5"><span style="width:88%"><strong class="rating">4.40</strong> out of 5</span></div>	              <!--  Display Product Price -->
-	              <span class="price">
-
-	<span class="price"><span class="amount">&#36;79.00</span></span>
-	              </span>
-    </a>
-</li> <!--  .product  -->
-
-<li class='product'><div class='product-thumb-wrap'><div class='product-thumb-wrap'>
-    <div class="product-images-wrap">
-        <ul class="product-images">
-            <li >
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/neon-touch-t-shirt/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/0085224438_1_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="0085224438_1_1_1" />									</a>			            		</div>
-            </li>
-            <li class="product-overlay">
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/neon-touch-t-shirt/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/0085224438_2_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="0085224438_2_1_1" />									</a>			            		</div>
-            </li>
-
-        </ul><!-- .product-images -->
-    </div><!-- .product-images-wrap -->
-    <a href="/shopster/?add-to-cart=137" rel="nofollow" data-product_id="137" data-product_sku="3241" class="button add_to_cart_button product_type_simple">Add to cart</a>	</div></div>
-    <a href="http://demo.ufothemes.com/shopster/product/neon-touch-t-shirt/" class="home-product-title"><h3>Neon Touch T-Shirt</h3>
-
-        <div class="star-rating" title="Rated 4.60 out of 5"><span style="width:92%"><strong class="rating">4.60</strong> out of 5</span></div>	              <!--  Display Product Price -->
-	              <span class="price">
-
-	<span class="price"><span class="amount">&#36;49.00</span></span>
-	              </span>
-    </a>
-</li> <!--  .product  -->
-
-<li class='product'>			<span class="onsale">Sale!</span>              <div class='product-thumb-wrap'><div class='product-thumb-wrap'>
-    <div class="product-images-wrap">
-        <ul class="product-images">
-            <li >
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/navajo-print-linen-t-shirt/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/5644227600_1_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="5644227600_1_1_1" />									</a>			            		</div>
-            </li>
-            <li class="product-overlay">
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/navajo-print-linen-t-shirt/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/5644227600_2_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="5644227600_2_1_1" />									</a>			            		</div>
-            </li>
-
-        </ul><!-- .product-images -->
-    </div><!-- .product-images-wrap -->
-    <a href="/shopster/?add-to-cart=132" rel="nofollow" data-product_id="132" data-product_sku="" class="button add_to_cart_button product_type_simple">Add to cart</a>	</div></div>
-    <a href="http://demo.ufothemes.com/shopster/product/navajo-print-linen-t-shirt/" class="home-product-title"><h3>Navajo Print Linen T-Shirt</h3>
-
-        <div class="star-rating" title="Rated 4.60 out of 5"><span style="width:92%"><strong class="rating">4.60</strong> out of 5</span></div>	              <!--  Display Product Price -->
-	              <span class="price">
-
-	<span class="price"><del><span class="amount">&#36;69.00</span></del> <ins><span class="amount">&#36;39.00</span></ins></span>
-	              </span>
-    </a>
-</li> <!--  .product  -->
-
-<li class='product'><div class='product-thumb-wrap'><div class='product-thumb-wrap'>
-    <div class="product-images-wrap">
-        <ul class="product-images">
-            <li >
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/top-with-grosgrain-straps/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/3666220712_1_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="3666220712_1_1_1" />									</a>			            		</div>
-            </li>
-            <li class="product-overlay">
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/top-with-grosgrain-straps/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/3666220712_2_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="3666220712_2_1_1" />									</a>			            		</div>
-            </li>
-
-        </ul><!-- .product-images -->
-    </div><!-- .product-images-wrap -->
-    <a href="/shopster/?add-to-cart=127" rel="nofollow" data-product_id="127" data-product_sku="3455" class="button add_to_cart_button product_type_simple">Add to cart</a>	</div></div>
-    <a href="http://demo.ufothemes.com/shopster/product/top-with-grosgrain-straps/" class="home-product-title"><h3>Top With Grosgrain Straps</h3>
-
-        <div class="star-rating" title="Rated 5.00 out of 5"><span style="width:100%"><strong class="rating">5.00</strong> out of 5</span></div>	              <!--  Display Product Price -->
-	              <span class="price">
-
-	<span class="price"><span class="amount">&#36;49.00</span></span>
-	              </span>
-    </a>
-</li> <!--  .product  -->
-
-<li class='product'><div class='product-thumb-wrap'><div class='product-thumb-wrap'>
-    <div class="product-images-wrap">
-        <ul class="product-images">
-            <li >
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/fantasy-fabric-blazer/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/7876875505_2_2_1-420x540.jpeg" class="attachment-shop_catalog" alt="7876875505_2_2_1" />									</a>			            		</div>
-            </li>
-            <li class="product-overlay">
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/fantasy-fabric-blazer/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/7876875505_2_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="7876875505_2_1_1" />									</a>			            		</div>
-            </li>
-
-        </ul><!-- .product-images -->
-    </div><!-- .product-images-wrap -->
-    <a href="/shopster/?add-to-cart=122" rel="nofollow" data-product_id="122" data-product_sku="3124" class="button add_to_cart_button product_type_simple">Add to cart</a>	</div></div>
-    <a href="http://demo.ufothemes.com/shopster/product/fantasy-fabric-blazer/" class="home-product-title"><h3>Fantasy Fabric Blazer</h3>
-
-        <div class="star-rating" title="Rated 4.60 out of 5"><span style="width:92%"><strong class="rating">4.60</strong> out of 5</span></div>	              <!--  Display Product Price -->
-	              <span class="price">
-
-	<span class="price"><span class="amount">&#36;149.00</span></span>
-	              </span>
-    </a>
-</li> <!--  .product  -->
-
-<li class='product'><div class='product-thumb-wrap'><div class='product-thumb-wrap'>
-    <div class="product-images-wrap">
-        <ul class="product-images">
-            <li >
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/printed-trousers/" >
-                        <img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/2469573401_1_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="2469573401_1_1_1" />									</a>			            		</div>
-            </li>
-            <li class="product-overlay">
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/printed-trousers/" >
-                        <img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/2469573401_2_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="2469573401_2_1_1" />									</a>			            		</div>
-            </li>
-
-        </ul><!-- .product-images -->
-    </div><!-- .product-images-wrap -->
-    <a href="/shopster/?add-to-cart=104" rel="nofollow" data-product_id="104" data-product_sku="4354" class="button add_to_cart_button product_type_simple">Add to cart</a>	</div></div>
-    <a href="http://demo.ufothemes.com/shopster/product/printed-trousers/" class="home-product-title"><h3>Printed Trousers</h3>
-
-        <div class="star-rating" title="Rated 4.40 out of 5"><span style="width:88%"><strong class="rating">4.40</strong> out of 5</span></div>	              <!--  Display Product Price -->
-	              <span class="price">
-
-	<span class="price"><span class="amount">&#36;149.00</span></span>
-	              </span>
-    </a>
-</li> <!--  .product  -->
-
-<li class='product'>			<span class="onsale">Sale!</span>              <div class='product-thumb-wrap'><div class='product-thumb-wrap'>
-    <div class="product-images-wrap">
-        <ul class="product-images">
-            <li >
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/snake-print-jeans/" >
-                        <img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/2563072400_1_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="2563072400_1_1_1" />									</a>			            		</div>
-            </li>
-            <li class="product-overlay">
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/snake-print-jeans/" >
-                        <img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/2563072400_2_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="2563072400_2_1_1" />									</a>			            		</div>
-            </li>
-
-        </ul><!-- .product-images -->
-    </div><!-- .product-images-wrap -->
-    <a href="/shopster/?add-to-cart=95" rel="nofollow" data-product_id="95" data-product_sku="2314" class="button add_to_cart_button product_type_simple">Add to cart</a>	</div></div>
-    <a href="http://demo.ufothemes.com/shopster/product/snake-print-jeans/" class="home-product-title"><h3>Snake Print Jeans</h3>
-
-        <div class="star-rating" title="Rated 5.00 out of 5"><span style="width:100%"><strong class="rating">5.00</strong> out of 5</span></div>	              <!--  Display Product Price -->
-	              <span class="price">
-
-	<span class="price"><del><span class="amount">&#36;129.00</span></del> <ins><span class="amount">&#36;99.00</span></ins></span>
-	              </span>
-    </a>
-</li> <!--  .product  -->
-
-<li class='product'><div class='product-thumb-wrap'><div class='product-thumb-wrap'>
-    <div class="product-images-wrap">
-        <ul class="product-images">
-            <li >
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/printed-message-sweatshirt/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/8574407401_1_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="8574407401_1_1_1" />									</a>			            		</div>
-            </li>
-            <li class="product-overlay">
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/printed-message-sweatshirt/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/8574407401_2_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="8574407401_2_1_1" />									</a>			            		</div>
-            </li>
-
-        </ul><!-- .product-images -->
-    </div><!-- .product-images-wrap -->
-    <a href="/shopster/?add-to-cart=89" rel="nofollow" data-product_id="89" data-product_sku="3142" class="button add_to_cart_button product_type_simple">Add to cart</a>	</div></div>
-    <a href="http://demo.ufothemes.com/shopster/product/printed-message-sweatshirt/" class="home-product-title"><h3>Printed Message Sweatshirt</h3>
-
-        <div class="star-rating" title="Rated 4.40 out of 5"><span style="width:88%"><strong class="rating">4.40</strong> out of 5</span></div>	              <!--  Display Product Price -->
-	              <span class="price">
-
-	<span class="price"><span class="amount">&#36;89.00</span></span>
-	              </span>
-    </a>
-</li> <!--  .product  -->
-
-<li class='product'>			<span class="onsale">Sale!</span>              <div class='product-thumb-wrap'><div class='product-thumb-wrap'>
-    <div class="product-images-wrap">
-        <ul class="product-images">
-            <li >
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/jacquard-pattern-blazer/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/2352136712_1_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="2352136712_1_1_1" />									</a>			            		</div>
-            </li>
-            <li class="product-overlay">
-                <div class="archive-product-image">
-                    <a href="http://demo.ufothemes.com/shopster/product/jacquard-pattern-blazer/" >			            			<img width="420" height="540" src="http://demo.ufothemes.com/shopster/wp-content/uploads/sites/5/2012/06/2352136712_2_1_1-420x540.jpeg" class="attachment-shop_catalog" alt="2352136712_2_1_1" />									</a>			            		</div>
-            </li>
-
-        </ul><!-- .product-images -->
-    </div><!-- .product-images-wrap -->
-    <a href="/shopster/?add-to-cart=83" rel="nofollow" data-product_id="83" data-product_sku="1653" class="button add_to_cart_button product_type_simple">Add to cart</a>	</div></div>
-    <a href="http://demo.ufothemes.com/shopster/product/jacquard-pattern-blazer/" class="home-product-title"><h3>Jacquard Pattern Blazer</h3>
-
-        <div class="star-rating" title="Rated 4.60 out of 5"><span style="width:92%"><strong class="rating">4.60</strong> out of 5</span></div>	              <!--  Display Product Price -->
-	              <span class="price">
-
-	<span class="price"><del><span class="amount">&#36;299.00</span></del> <ins><span class="amount">&#36;199.00</span></ins></span>
-	              </span>
-    </a>
-</li> <!--  .product  -->
-
-
-</ul>
-</div>
-</section><!-- home-products featured-products related -->
 
 <!-- HOMEPAGE PAGE ONE SECTION -->
 

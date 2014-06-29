@@ -12,7 +12,6 @@ public class Color extends Model{
 
     @Required
     public String nombre;
-    @Required
     public Blob foto;
     @Required
     public int cantidad;
@@ -20,11 +19,11 @@ public class Color extends Model{
     @Required
     public Articulo articulo;
 
-    public Color(String nombre, int cantidad, Blob foto){
+    public Color(String nombre, int cantidad){
 
         this.nombre = nombre;
         this.cantidad = cantidad;
-        this.foto = foto;
+        this.foto = null;
     }
 
 

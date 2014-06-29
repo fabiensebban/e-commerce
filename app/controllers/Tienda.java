@@ -131,9 +131,20 @@ public class Tienda extends Controller {
 
 
     public static void producto(Long idProducto) {
-        List<Articulo> novedades = new ArrayList<Articulo>();
-        novedades = Articulo.find("order by fecha_creacion desc").fetch(12);
-        render(novedades);
+
+        if(idProducto == null){
+            Tienda.catalogo(null);
+        }
+
+        long IdPadre = 1;
+        List<Categoria> categorias = Categoria.find("byIdPadre", IdPadre).fetch();
+
+        Articulo articulo = Articulo.findById(idProducto);
+
+        if(articulo == null) Tienda.catalogo(null);
+
+        List<Articulo> novedades = Articulo.find("order by fecha_creacion asc").fetch(4);
+        render(articulo, categorias, novedades);
     }
 
     public static void fotoColor(long id) {

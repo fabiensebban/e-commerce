@@ -5,6 +5,7 @@ import play.*;
 import play.mvc.*;
 import  play.db.jpa.Blob;
 
+import java.io.File;
 import java.util.*;
 
 import models.*;
@@ -12,13 +13,16 @@ import models.*;
 public class Application extends Controller {
 
     public static void index() {
-        List<Articulo> novedades = Articulo.find("order by fecha_creacion asc").fetch(11);
+        List<Articulo> novedades = Articulo.find("order by fecha_creacion desc").fetch(11);
         render(novedades);
     }
     public static void testIndex() {
         List<Articulo> novedades = Articulo.find("order by fecha_creacion asc").fetch();
-        //System.out.println("Novedad 1: " + novedades.get(0).referencia.nombre);
         render(novedades);
+    }
+
+    public static void contacto() {
+        render();
     }
 
     public static void addArticulo(int cantidad, Referencia referencia){
@@ -35,8 +39,8 @@ public class Application extends Controller {
     }
 
     //Comprueba si el articulo tiene un segundo color asignado
-    public boolean existeOtroColor(Long id){
-        Articulo articulo = Articulo.findById(id);
+    public static boolean existeOtroColor(Articulo articulo){
+
         Color tmpColor;
         try{
             tmpColor = articulo.colores.get(1);
@@ -47,5 +51,4 @@ public class Application extends Controller {
         }
 
     }
-
 }
